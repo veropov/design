@@ -1,0 +1,175 @@
+.music_cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px 0px 500px;
+    height: 1062px;
+    object-fit: cover;
+    overflow: hidden;
+    background-color: white;
+    width: 100%;
+    .music_title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 100px;
+        width: 300px;
+        z-index: 10;
+        margin-top: 185px;
+        .music_title_head {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 32px;
+        }
+        .music_title_bott {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 40px;
+            .music_title_bott_cont {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px;
+                gap: 16px;
+            }
+        }
+        .title_h1 {
+
+            font-style: normal;
+            font-weight: 400;
+            font-size: 90px;
+        }
+        .title_h2 {
+
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 125%;
+        }
+        .title_h2_bold {
+
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 125%;
+        }
+        .title_h3 {
+
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 125%;
+        }
+    }
+    .music_img {
+        right: 0;
+        height: 1062px;
+        margin-left: 150px;
+        margin-top: 150px;
+        z-index: 10;
+    }
+    .music_anim {
+        position: absolute;
+        transform: translate(-515px, 0px);
+        width: 1400px;
+        z-index: 1;
+            overflow: hidden;
+    }
+    .music_union {
+        display: none;
+        z-index: 0;
+        position: absolute;
+        transform: translate(-235px, -150px);
+    }
+}
+
+
+@media only screen and (max-width: 420px) {
+    .music_cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0px 175px 0px 50px;
+        width: 100%;
+        height: 650px;
+        object-fit: cover;
+        overflow: hidden;
+        .music_title {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 50px;
+            width: 150px;
+            z-index: 10;
+            margin-top: 40px;
+            .music_title_head {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            .music_title_bott {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px;
+                gap: 40px;
+                .music_title_bott_cont {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 0px;
+                    gap: 16px;
+                }
+            }
+            .title_h1 {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 50px;
+                line-height: 125%;
+            }
+            .title_h2 {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 125%;
+            }
+            .title_h2_bold {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 125%;
+            }
+            .title_h3 {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 125%;
+            }
+        }
+        .music_img {
+            display: none;
+        }
+        .music_anim {
+            position: absolute;
+            transform: translate(-300px, -260px);
+            width: 650px;
+            z-index: 1;
+                overflow: hidden;
+        }
+        .music_union {
+            display: none;
+            z-index: 0;
+            position: absolute;
+            transform: translate(-235px, -335px);
+        }
+    }    
+}

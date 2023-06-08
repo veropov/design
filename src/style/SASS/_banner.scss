@@ -1,0 +1,119 @@
+.container_banner {
+    background: radial-gradient(74.08% 1695.93% at 12.04% 80.92%, rgba(175, 193, 255, 0.2) 0%, rgba(112, 0, 255, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, linear-gradient(86.99deg, #BAC5FF 0.2%, #EFCDFF 99.48%);
+    border-radius: 16px;
+    width: 100%;
+    max-width: 1600px;
+    height: 400px;
+    overflow: hidden;
+    z-index: 1;
+    a {
+        text-decoration: none;
+    }
+    img {
+        max-width: 1640px;
+        object-fit: cover;
+        position: relative;
+        z-index: 2;
+        transform: translate(-4px, -404px);
+    }
+    .frame_banner {
+        max-width: 1600px;
+        object-fit: cover;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        padding: 30px;
+        gap: 25px;
+        z-index: 10;
+        .p_banner{
+            font-weight: 500;
+            font-size: 58px;
+            line-height: 110%;
+            text-align: center;
+        }
+    }
+}
+
+.button_banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 22px 36px;
+    background: #5C59FF;
+    border-radius: 99px;
+    cursor: pointer;
+    transition: linear .1s;
+    &:hover {
+        background: #2725c9;
+    }
+}
+
+.title_button_banner {
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 420px) {
+
+    .container_banner {
+        background: radial-gradient(74.08% 1695.93% at 12.04% 80.92%, rgba(175, 193, 255, 0.2) 0%, rgba(112, 0, 255, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, linear-gradient(86.99deg, #BAC5FF 0.2%, #EFCDFF 99.48%);
+        border-radius: 16px;
+        width: 100%;
+        max-width: 340px;
+        height: 260px;
+        overflow: hidden;
+        z-index: 1;
+        img {
+            max-width: 1640px;
+            object-fit: cover;
+            position: relative;
+            z-index: 2;
+            transform: translate(-4px, -402px);
+        }
+        .frame_banner {
+            max-width: 340px;
+            object-fit: cover;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 260px;
+            padding: 30px;
+            gap: 25px;
+            z-index: 10;
+            .p_banner{
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 110%;
+                text-align: center;
+            }
+        }
+    }
+    
+    .button_banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 18px 32px;
+        background: #5C59FF;
+        border-radius: 99px;
+        cursor: pointer;
+        transition: linear .1s;
+        &:hover {
+            background: #2725c9;
+        }
+    }
+    
+    .title_button_banner {
+        color: white;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+    }
+}

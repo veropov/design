@@ -1,0 +1,113 @@
+.portfolio_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    a {
+        text-decoration: none;
+    }
+}
+
+.proj_area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 15px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    transition: linear .15s;
+    cursor: pointer;
+    &:hover {
+        transform: translateY(-8px);
+    }
+
+    img {
+        border-radius: 16px;
+        width: 530px;
+    }
+    .proj_cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+        width: 530px;
+        border-radius: 16px;
+        transition: linear .1s;
+        z-index: 1;
+        .title_proj {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 130%;
+        }
+        .subTitle_proj {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 130%;
+        }
+    }
+}
+
+.lottie_proj {
+    position: absolute;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 420px) {
+    
+    .portfolio_main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 25px;
+    }
+    
+    .proj_area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 340px;
+        padding: 30px;
+        gap: 15px;
+        background: #FFFFFF;
+        border-radius: 16px;
+        img {
+            border-radius: 16px;
+            width: 300px;
+        }
+        .proj_cont {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 10px;
+            width: 300px;
+            border-radius: 16px;
+            transition: linear .1s;
+            z-index: 1;
+            .title_proj {
+                font-family: 'Jost';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 130%;
+            }
+            .subTitle_proj {
+                font-family: 'Jost';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 130%;
+            }
+        }
+    }
+}
