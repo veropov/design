@@ -574,6 +574,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 25px;
+  margin-bottom: 10px;
 }
 .portfolio_main a {
   text-decoration: none;
@@ -627,6 +628,7 @@
 .lottie_proj {
   position: absolute;
   z-index: -1;
+  transform: translate(0px, 3px);
 }
 
 @media only screen and (max-width: 420px) {
@@ -827,6 +829,7 @@
   align-items: flex-start;
   padding: 0px;
   gap: 10px;
+  height: 120px;
 }
 .project_container .cont_head_project .head_project .title_project {
   display: flex;
@@ -994,7 +997,7 @@
 
 .modal_proj {
   position: absolute;
-  transform: translate(134px, -92px);
+  transform: translate(0px, -145px);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -1025,7 +1028,7 @@
 
 .modal_proj_false {
   position: absolute;
-  transform: translate(134px, -92px);
+  transform: translate(0px, -145px);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -1076,14 +1079,14 @@
   position: absolute;
   z-index: 100;
   width: 320px;
-  transform: translate(134px, -84px);
+  transform: translate(0px, -145px);
 }
 
 .modal_dis_anim {
   position: absolute;
   z-index: 10;
   width: 320px;
-  transform: translate(134px, -92px);
+  transform: translate(0px, -145px);
 }
 
 .button_main_proj {
@@ -1303,7 +1306,7 @@
   }
   .modal_proj {
     position: absolute;
-    transform: translate(0px, -110px);
+    transform: translate(0px, -145px);
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -1333,7 +1336,7 @@
   }
   .modal_proj_false {
     position: absolute;
-    transform: translate(0px, -110px);
+    transform: translate(0px, -145px);
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -1381,13 +1384,13 @@
     position: absolute;
     z-index: 100;
     width: 320px;
-    transform: translate(0px, -110px);
+    transform: translate(0px, -145px);
   }
   .modal_dis_anim {
     position: absolute;
     z-index: 10;
     width: 320px;
-    transform: translate(0px, -110px);
+    transform: translate(0px, -145px);
   }
 }
 .container_banner_ux {
@@ -1623,6 +1626,8 @@
   flex-direction: column;
   background-color: rgb(240, 240, 240);
   width: 100%;
+  position: relative;
+  z-index: 10;
 }
 .main_yand .container_main_yand {
   display: flex;
@@ -1670,12 +1675,12 @@
   font-size: 20px;
 }
 .main_yand .container_main_yand .sub_cont_yand .homeYan_cont .yan_lottie_black {
-  transform: translate(1px, -1551px);
+  transform: translate(1px, -1380px);
   position: relative;
   z-index: 0;
 }
 .main_yand .container_main_yand .sub_cont_yand .homeYan_cont .yan_lottie_red {
-  transform: translate(1px, -1551px);
+  transform: translate(1px, -1380px);
   position: relative;
   z-index: 0;
 }
@@ -1729,7 +1734,7 @@
     width: 115%;
   }
   .main_yand .container_main_yand .sub_cont_yand .homeYan_cont {
-    margin-top: 30px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1741,15 +1746,16 @@
     overflow: hidden;
   }
   .main_yand .container_main_yand .sub_cont_yand .homeYan_cont .yan_boss {
+    margin-top: 18px;
     width: 340px;
   }
   .main_yand .container_main_yand .sub_cont_yand .homeYan_cont .button_watch_yand {
     position: relative;
-    transform: translate(0px, 410px);
+    transform: translate(0px, 440px);
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 16px 32px;
+    padding: 14px 24px;
     gap: 8px;
     background: white;
     border-radius: 100px;
@@ -1759,19 +1765,17 @@
   .main_yand .container_main_yand .sub_cont_yand .homeYan_cont .button_watch_yand .button_watch_yand_p {
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
   }
   .main_yand .container_main_yand .sub_cont_yand .homeYan_cont .yan_lottie_black {
-    display: none;
     width: 422px;
-    transform: translate(1px, -546px);
+    transform: translate(1px, -486px);
     position: relative;
     z-index: 0;
   }
   .main_yand .container_main_yand .sub_cont_yand .homeYan_cont .yan_lottie_red {
-    display: none;
     width: 422px;
-    transform: translate(1px, -546px);
+    transform: translate(1px, -486px);
     position: relative;
     z-index: 0;
   }
@@ -1786,7 +1790,7 @@
     font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
-    font-size: 26px;
+    font-size: 30px;
     z-index: 1;
     line-height: 130%;
   }
@@ -1794,11 +1798,11 @@
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 130%;
     text-align: center;
     z-index: 1;
-    width: 220px;
+    width: 260px;
   }
 }
 .music_cont {
@@ -2293,7 +2297,7 @@
   background: rgba(212, 223, 243, 0.17);
 }
 
-.filter_anim {
+.skilla_filter_anim {
   position: absolute;
   transform: translate(-25px, 0px);
   cursor: pointer;
@@ -2348,7 +2352,7 @@
   color: #121922;
 }
 
-.modal_anim {
+.skilla_modal_anim {
   width: 212px;
   position: absolute;
   transform: translate(495px, -35px);

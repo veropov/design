@@ -23,8 +23,8 @@ export default function ProjectPage() {
                         <div className='projectPage'>
                             <div className="project_container">
                                 { MainProject('Smart drive', 'Приложение, которое позволяет сократить расходы на оформление ОСАГО', 'comm', true, true, true, true, true, true, 'https://www.figma.com/file/KqSP2KCkcgf5dmwGOheM7M/Smart-drive?type=design&node-id=293%3A564&t=jN8krBkmCu9Fss5J-1', Smart, false) }
-                                { MainProject('FUN&SUN project', 'Оформление услуг в аэропорту, раздел обратной связи, поддержка NPS системы', 'comm', true, true, true, true, true, false, 'https://www.figma.com/file/SQvge574qM6tTgjtcWM1GJ/FUN%26SUN-projects?type=design&node-id=0%3A1&t=1YttjT2b5n2LNMkz-1', Baggage, false) }
-                                { MainProject('FitnestX', 'Разработка приложения с нуля, тестирование функционала, UX исследования', 'pet', false, true, false, false, true, true, 'https://www.figma.com/file/9mZkv8cZ3mMbVoNdgDGm6k/Port?type=design&node-id=0%3A1&t=mknrEsQoNr8OEwyb-1', Fitnest, false) }
+                                { MainProject('FUN&SUN project', 'Оформление услуг в аэропорту', 'comm', true, true, true, true, true, false, 'https://www.figma.com/file/SQvge574qM6tTgjtcWM1GJ/FUN%26SUN-projects?type=design&node-id=0%3A1&t=1YttjT2b5n2LNMkz-1', Baggage, false) }
+                                { MainProject('Lada', 'Создание лендинга для ', 'pet', false, true, false, false, true, true, 'https://www.figma.com/file/9mZkv8cZ3mMbVoNdgDGm6k/Port?type=design&node-id=0%3A1&t=mknrEsQoNr8OEwyb-1', Fitnest, false) }
                             </div>
                             <div className="project_container">
                                 { MainProject('Lottie анимация', 'Приложение, которое позволяет сократить расходы на оформление ОСАГО', 'comm', true, true, false, false, false, true, 'https://github.com/veropov/Fun-Sun-anim', JSCode, true) }

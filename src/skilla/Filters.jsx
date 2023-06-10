@@ -9,7 +9,7 @@ export const Filters = ({objects, activeNu, id, checkR, countR, count}) => {
     function LottieCheck() {
         if (checkR === true) {
             return (<Player 
-                className="filter_anim" 
+                className="skilla_filter_anim" 
                 src={filterTrans} 
                 loop={false}
                 autoplay={true}

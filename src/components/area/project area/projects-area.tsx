@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Show from '../project area/Showreel HomePage.jpg';
-import Fun from '../project area/Fun HomePage.jpg';
+import Fun from '../project area/yand.jpg';
 import Lottie from "lottie-react";
 import trans from './trans_test.json';
 
@@ -9,12 +9,12 @@ import trans from './trans_test.json';
 
     const title = [
         'Showreel 2021-22',
-        'FUN&SUN Project'
+        'Web анимация Yandex'
     ]
 
     const subTitle = [
         'Примеры работ по 2D моушен дизайну (фриланс, коммерция, пет-проекты). Шейповая, персонажная, basic VFX анимация, монтаж.',
-        'Дизайн интерфейсов. Оформление услуг в аэропорту (фаст-трек, упаковка багажа, бизнес зал и тд) через API партнеров.'
+        'Пет проект с веб анимацией для Яндекс станции, адаптивная верстка. Стек: React, Lottie.js player, SASS'
     ]
 
     const image = [
@@ -24,7 +24,7 @@ import trans from './trans_test.json';
 
     const hrefHome = [
         'https://www.youtube.com/watch?v=EUSxsN3YXl4',
-        'https://www.figma.com/file/SQvge574qM6tTgjtcWM1GJ/FUN%26SUN-projects?type=design&node-id=3%3A25637&t=hVzvHrBigKVkESR4-1'
+        '/yandex'
     ]
 
     const [proj, setProj] = useState({
@@ -51,7 +51,7 @@ import trans from './trans_test.json';
             <div className="lottie_proj">
                 <Lottie 
                     autoPlay={true}
-                    loop={false} 
+                    loop={true} 
                     animationData={trans}
                 />
             </div>

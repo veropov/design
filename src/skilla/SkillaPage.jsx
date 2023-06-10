@@ -93,9 +93,9 @@ const SkillaPage = () => {
     function LottieCheck() {
         if (modalAnim === true) {
             return (
-            <div className='modal_anim'>
+            <div className='skilla_modal_anim'>
                 <Player 
-                    className="filter_anim" 
+                    className="skilla_filter_anim" 
                     src={modalAn} 
                     loop={false}
                     autoplay={true}

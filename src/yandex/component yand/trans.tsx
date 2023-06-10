@@ -1,5 +1,5 @@
-import transYan_black from '../style/Lottie/tran.json';
-import transYan_red from '../style/Lottie/red trans.json';
+import transYan_black from '../style/Lottie/tran black.json';
+import transYan_red from '../style/Lottie/tran red.json';
 import { useEffect, useRef, useState } from "react";
 import boss from '../style/assets/yan_boss.png';
 import bossRed from '../style/assets/yan_boss_red.png';

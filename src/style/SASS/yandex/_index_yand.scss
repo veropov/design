@@ -5,6 +5,8 @@
     flex-direction: column;
     background-color: rgb(240, 240, 240);
     width: 100%;
+    position: relative;
+    z-index: 10;
     .container_main_yand {
         display: flex;
         flex-direction: column;
@@ -47,12 +49,12 @@
                     }
                 }
                 .yan_lottie_black {
-                    transform: translate(1px, -1551px);
+                    transform: translate(1px, -1380px);
                     position: relative;
                     z-index: 0;
                 }
                 .yan_lottie_red {
-                    transform: translate(1px, -1551px);
+                    transform: translate(1px, -1380px);
                     position: relative;
                     z-index: 0;
                 }
@@ -107,7 +109,7 @@
                 background: rgb(241, 241, 241);
                 width: 115%;
                 .homeYan_cont {
-                    margin-top: 30px;
+                    margin-top: 40px;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -117,15 +119,16 @@
                     object-fit: cover;
                     overflow: hidden;
                     .yan_boss {
+                        margin-top: 18px;
                         width: 340px;
                     }
                     .button_watch_yand {
                         position: relative;
-                        transform: translate(0px, 410px);
+                        transform: translate(0px, 440px);
                         display: flex;
                         flex-direction: row;
                         align-items: center;
-                        padding: 16px 32px;
+                        padding: 14px 24px;
                         gap: 8px;
                         background: white;
                         border-radius: 100px;
@@ -134,20 +137,18 @@
                         .button_watch_yand_p {
                             font-style: normal;
                             font-weight: 500;
-                            font-size: 16px;
+                            font-size: 18px;
                         }
                     }
                     .yan_lottie_black {
-                        display: none;
                         width: 422px;
-                        transform: translate(1px, -546px);
+                        transform: translate(1px, -486px);
                         position: relative;
                         z-index: 0;
                     }
                     .yan_lottie_red {
-                        display: none;
                         width: 422px;
-                        transform: translate(1px, -546px);
+                        transform: translate(1px, -486px);
                         position: relative;
                         z-index: 0;
                     }
@@ -161,7 +162,7 @@
                             font-family: 'Roboto';
                             font-style: normal;
                             font-weight: 500;
-                            font-size: 26px;
+                            font-size: 30px;
                             z-index: 1;
                             line-height: 130%;
                         }
@@ -169,11 +170,11 @@
                             font-family: 'Roboto';
                             font-style: normal;
                             font-weight: 400;
-                            font-size: 16px;
+                            font-size: 18px;
                             line-height: 130%;
                             text-align: center;
                             z-index: 1;
-                            width: 220px;
+                            width: 260px;
                         }
                     }
                 }

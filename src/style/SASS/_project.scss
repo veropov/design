@@ -25,6 +25,7 @@
             align-items: flex-start;
             padding: 0px;
             gap: 10px;
+            height: 120px;
             .title_project {
                 display: flex;
                 flex-direction: row;
@@ -194,7 +195,7 @@
 
 .modal_proj {
     position: absolute;
-    transform: translate(134px, -92px);
+    transform: translate(0px, -145px);
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -224,7 +225,7 @@
 
 .modal_proj_false {
     position: absolute;
-    transform: translate(134px, -92px);
+    transform: translate(0px, -145px);
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -274,14 +275,14 @@
     position: absolute;
     z-index: 100;
     width: 320px;
-    transform: translate(134px, -84px);
+    transform: translate(0px, -145px);
 }
 
 .modal_dis_anim {
     position: absolute;
     z-index: 10;
     width: 320px;
-    transform: translate(134px, -92px);
+    transform: translate(0px, -145px);
 }
 
 .button_main_proj {
@@ -503,7 +504,7 @@
     }
     .modal_proj {
         position: absolute;
-        transform: translate(0px, -110px);
+        transform: translate(0px, -145px);
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -533,7 +534,7 @@
 
     .modal_proj_false {
         position: absolute;
-        transform: translate(0px, -110px);
+        transform: translate(0px, -145px);
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -583,14 +584,14 @@
         position: absolute;
         z-index: 100;
         width: 320px;
-        transform: translate(0px, -110px);
+        transform: translate(0px, -145px);
     }
 
     .modal_dis_anim {
         position: absolute;
         z-index: 10;
         width: 320px;
-        transform: translate(0px, -110px);
+        transform: translate(0px, -145px);
     }
 }
 

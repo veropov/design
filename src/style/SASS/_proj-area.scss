@@ -4,6 +4,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 25px;
+    margin-bottom: 10px;
     a {
         text-decoration: none;
     }
@@ -58,6 +59,7 @@
 .lottie_proj {
     position: absolute;
     z-index: -1;
+    transform: translate(0px,3px);
 }
 
 @media only screen and (max-width: 420px) {
