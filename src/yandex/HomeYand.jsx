@@ -3,6 +3,8 @@ import { Button } from './component yand/button';
 import MusicPage from "./music";
 import Transition from  './component yand/trans';
 import Header from '../lib/header';
+import {bannerYandex } from './banners';
+import { YandSlider} from './yandex-slider';
 
 const HomePageYand = () => {
 
@@ -25,7 +27,13 @@ const HomePageYand = () => {
                     </div>
                 </div>
             </div>
+            <YandSlider />
             <MusicPage />
+            <div className='yand_banner_cont'>
+                <div className='yand_banner_page'>
+                    {bannerYandex}
+                </div>
+            </div>
         </div>
     )
 }

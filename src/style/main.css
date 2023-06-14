@@ -1662,7 +1662,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 16px 32px;
+  padding: 14px 24px;
   gap: 8px;
   background: white;
   border-radius: 100px;
@@ -1674,13 +1674,8 @@
   font-weight: 500;
   font-size: 20px;
 }
-.main_yand .container_main_yand .sub_cont_yand .homeYan_cont .yan_lottie_black {
-  transform: translate(1px, -1380px);
-  position: relative;
-  z-index: 0;
-}
-.main_yand .container_main_yand .sub_cont_yand .homeYan_cont .yan_lottie_red {
-  transform: translate(1px, -1380px);
+.main_yand .container_main_yand .sub_cont_yand .homeYan_cont .boss_anim {
+  transform: translate(0px, -1700px);
   position: relative;
   z-index: 0;
 }
@@ -1720,7 +1715,7 @@
     align-items: center;
     justify-content: center;
     padding: 0px;
-    gap: 40px;
+    gap: 35px;
     width: 340px;
   }
   .main_yand .container_main_yand .sub_cont_yand {
@@ -1746,16 +1741,16 @@
     overflow: hidden;
   }
   .main_yand .container_main_yand .sub_cont_yand .homeYan_cont .yan_boss {
-    margin-top: 18px;
+    margin-top: 15px;
     width: 340px;
   }
   .main_yand .container_main_yand .sub_cont_yand .homeYan_cont .button_watch_yand {
     position: relative;
-    transform: translate(0px, 440px);
+    transform: translate(0px, 450px);
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 14px 24px;
+    padding: 10px 18px;
     gap: 8px;
     background: white;
     border-radius: 100px;
@@ -1765,18 +1760,12 @@
   .main_yand .container_main_yand .sub_cont_yand .homeYan_cont .button_watch_yand .button_watch_yand_p {
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 14px;
   }
-  .main_yand .container_main_yand .sub_cont_yand .homeYan_cont .yan_lottie_black {
-    width: 422px;
-    transform: translate(1px, -486px);
+  .main_yand .container_main_yand .sub_cont_yand .homeYan_cont .boss_anim {
+    transform: translate(0px, -598px);
     position: relative;
-    z-index: 0;
-  }
-  .main_yand .container_main_yand .sub_cont_yand .homeYan_cont .yan_lottie_red {
-    width: 422px;
-    transform: translate(1px, -486px);
-    position: relative;
+    width: 420px;
     z-index: 0;
   }
   .main_yand .container_main_yand .sub_cont_yand .homeYan_cont .homeYan_title {
@@ -1784,7 +1773,7 @@
     flex-direction: column;
     align-items: center;
     padding: 0px;
-    gap: 30px;
+    gap: 35px;
   }
   .main_yand .container_main_yand .sub_cont_yand .homeYan_cont .homeYan_title .yan_b {
     font-family: "Roboto";
@@ -1806,9 +1795,10 @@
   }
 }
 .music_cont {
+  position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 0px 0px 0px 500px;
   height: 1062px;
@@ -1817,16 +1807,18 @@
   overflow: hidden;
   background-color: white;
   width: 100%;
+  z-index: 1;
 }
 .music_cont .music_title {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-left: 100px;
   padding: 0px;
   gap: 100px;
   width: 300px;
   z-index: 10;
-  margin-top: 185px;
+  margin-top: 150px;
 }
 .music_cont .music_title .music_title_head {
   display: flex;
@@ -1874,9 +1866,9 @@
 }
 .music_cont .music_img {
   right: 0;
-  height: 1062px;
+  height: 1250px;
   margin-left: 150px;
-  margin-top: 150px;
+  margin-top: 400px;
   z-index: 10;
 }
 .music_cont .music_anim {
@@ -1898,7 +1890,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
     padding: 0px 175px 0px 50px;
     width: 100%;
     height: 650px;
@@ -1915,6 +1906,7 @@
     width: 150px;
     z-index: 10;
     margin-top: 40px;
+    margin-right: 100px;
   }
   .music_cont .music_title .music_title_head {
     display: flex;
@@ -1965,7 +1957,7 @@
   }
   .music_cont .music_anim {
     position: absolute;
-    transform: translate(-300px, -260px);
+    transform: translate(0px, -260px);
     width: 650px;
     z-index: 1;
     overflow: hidden;
@@ -1977,6 +1969,171 @@
     transform: translate(-235px, -335px);
   }
 }
+.yand_banner_cont {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 10;
+  background: white;
+}
+.yand_banner_cont .yand_banner_page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 100px;
+  width: 1200px;
+}
+.yand_banner_cont .yand_banner_page .yand_banner_main {
+  width: 375px;
+}
+.yand_banner_cont .yand_banner_page .yand_banner_main .yand_banner_text {
+  position: absolute;
+  margin-left: 70px;
+}
+.yand_banner_cont .yand_banner_page .yand_banner_main .yand_banner_text .yand_banner_title {
+  margin-top: 40px;
+}
+.yand_banner_cont .yand_banner_page .yand_banner_main .yand_banner_text .yand_banner_title .yand_banner_title_p {
+  font-family: "Roboto";
+  font-weight: 300;
+  color: white;
+  font-size: 32px;
+}
+.yand_banner_cont .yand_banner_page .yand_banner_main .yand_banner_text .yand_banner_title_subtitle {
+  display: flex;
+  flex-direction: column;
+  margin-top: 400px;
+  gap: 15px;
+}
+.yand_banner_cont .yand_banner_page .yand_banner_main .yand_banner_text .yand_banner_title_subtitle .yand_banner_title_bold {
+  color: white;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 500;
+  width: 220px;
+  line-height: 125%;
+}
+.yand_banner_cont .yand_banner_page .yand_banner_main .yand_banner_text .yand_banner_title_subtitle .yand_banner_title_light {
+  color: white;
+  font-family: "Roboto";
+  width: 228px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 125%;
+}
+.yand_banner_cont .yand_banner_page .yand_banner_main .yand_banner_img {
+  width: 400px;
+}
+.yand_banner_cont .yand_banner_page .yand_banner_main .yand_banner_img img {
+  width: 375px;
+}
+
+@media only screen and (max-width: 420px) {
+  .yand_banner_cont {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 10;
+    background: white;
+  }
+  .yand_banner_cont .yand_banner_page {
+    flex-direction: column;
+    width: 340px;
+    display: flex;
+    align-items: center;
+  }
+  .yand_banner_cont .yand_banner_page .yand_banner_main {
+    margin-top: 0px;
+  }
+}
+.slider_yand {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 900px;
+  background: white;
+}
+.slider_yand .slider_yand_cont {
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+}
+.slider_yand .slider_yand_cont .slider_yand_img_cont {
+  position: absolute;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider_yand .slider_yand_cont .slider_yand_img_cont .slider_yand_trans {
+  z-index: 10;
+  position: absolute;
+  width: 800px;
+}
+.slider_yand .slider_yand_cont .slider_yand_img_cont .slider_yand_img {
+  width: 1200px;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+.slider_yand .slider_yand_cont .slider_yand_img_cont .slider_yand_img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+.slider_yand .slider_yand_cont .slider_yand_butt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 600px;
+}
+.slider_yand .slider_yand_cont .slider_yand_butt .yand_slider_lottie_active {
+  position: absolute;
+  width: 94px;
+}
+.slider_yand .slider_yand_cont .slider_yand_butt .yand_slider_lottie_click {
+  position: absolute;
+  width: 94px;
+}
+.slider_yand .slider_yand_cont .slider_yand_butt .butt_yand_slider_black {
+  position: absolute;
+  cursor: pointer;
+  background: #242424;
+  border-radius: 99px;
+  width: 80px;
+  height: 38px;
+}
+.slider_yand .slider_yand_cont .slider_yand_butt .butt_yand_slider_red {
+  position: absolute;
+  cursor: pointer;
+  background: #991823;
+  border-radius: 99px;
+  width: 80px;
+  height: 38px;
+}
+.slider_yand .slider_yand_cont .slider_yand_butt .butt_yand_slider_blue {
+  position: absolute;
+  cursor: pointer;
+  background: #27279C;
+  border-radius: 99px;
+  width: 80px;
+  height: 38px;
+}
+.slider_yand .slider_yand_cont .slider_yand_butt .butt_yand_slider_white {
+  position: absolute;
+  cursor: pointer;
+  background: #E3D2C3;
+  border-radius: 99px;
+  width: 80px;
+  height: 38px;
+}
+
 .container .container_skilla {
   display: flex;
   justify-content: center;

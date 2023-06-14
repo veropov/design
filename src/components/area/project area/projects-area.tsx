@@ -3,6 +3,7 @@ import Show from '../project area/Showreel HomePage.jpg';
 import Fun from '../project area/yand.jpg';
 import Lottie from "lottie-react";
 import trans from './trans_test.json';
+import { Player} from '@lottiefiles/react-lottie-player';
 
 
     function ProjArea() {
@@ -49,10 +50,12 @@ import trans from './trans_test.json';
     function LottieProj(index: any) {
         return (
             <div className="lottie_proj">
-                <Lottie 
-                    autoPlay={true}
+                <Player
+                    autoplay={true}
                     loop={true} 
-                    animationData={trans}
+                    src={trans}
+                    renderer='svg'
+                    direction={1}
                 />
             </div>
         )
@@ -65,7 +68,7 @@ import trans from './trans_test.json';
                     <div 
                         className="proj_area" 
                         onMouseEnter={() => toggleHover(index)}
-                        onMouseLeave={() => toggleDisHover()}
+                        // onMouseLeave={() => toggleDisHover()}
                     >
                         <div className="proj_cont">
                             <p className="title_proj">{title[index]}</p>

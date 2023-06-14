@@ -25,9 +25,9 @@ export default function ItPage() {
                     <div className="sub_cont">
                         <p className='title_cont'>Проекты</p>
                         <div className="project_container">
-                            { MainProject('Lottie анимация', 'Приложение, которое позволяет сократить расходы на оформление ОСАГО', 'comm', true, true, false, false, false, true, 'https://github.com/veropov/Fun-Sun-anim', JSCode, true) }
-                            { MainProject('Сайт PHP, native JS', 'Разработка приложения с нуля, тестирование функционала, UX исследования', 'pet', false, true, false, false, false, true, 'https://github.com/veropov/Diagnostic_irk', PHPtCode, true) }
-                            { MainProject('FitnestX', 'Оформление услуг в аэропорту, раздел обратной связи, поддержка NPS системы', 'pet', false, true, true, true, false, true, 'https://github.com/veropov/Train', DartCode, true) }
+                            { MainProject('Lottie анимация', 'Анимация прелоадера для круизного направления FUN&SUN', 'comm', true, true, false, false, false, true, 'https://github.com/veropov/Fun-Sun-anim', JSCode, true) }
+                            { MainProject('Сайт PHP, native JS', 'Первый проект со сложной версткой и нативном JavaScript без библиотек', 'pet', false, true, false, false, false, true, 'https://github.com/veropov/Diagnostic_irk', PHPtCode, true) }
+                            { MainProject('FitnestX', 'Разработка фитнес приложения с нуля на фреймворке Flutter(dart)', 'pet', false, true, true, true, false, true, 'https://github.com/veropov/Train', DartCode, true) }
                         </div>
                     </div>
                 </div>

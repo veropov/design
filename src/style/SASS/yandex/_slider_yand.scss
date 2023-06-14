@@ -1,0 +1,87 @@
+.slider_yand {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 900px;
+    background: white;
+    .slider_yand_cont {
+        width: 1200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 120px;
+        .slider_yand_img_cont {
+            position: absolute;
+            margin-bottom: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .slider_yand_trans {
+                z-index: 10;
+                position: absolute;
+                width: 800px;
+                .yand_slider_lottie_trans {
+
+                }
+            }
+            .slider_yand_img {
+                width: 1200px;
+                height: 600px;
+                overflow: hidden;
+                border-radius: 30px;
+                img {
+                    object-fit: cover;
+                    height: 100%;
+                }
+            }
+        }
+        .slider_yand_butt {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            margin-top: 600px;
+            .yand_slider_lottie_active {
+                position: absolute;
+                width: 94px;
+            }
+            .yand_slider_lottie_click {
+                position: absolute;
+                width: 94px; 
+            }
+            .butt_yand_slider_black {
+                position: absolute;
+                cursor: pointer;
+                background: #242424;
+                border-radius: 99px;
+                width: 80px;
+                height: 38px;
+            }
+            .butt_yand_slider_red {
+                position: absolute;
+                cursor: pointer;
+                background: #991823;
+                border-radius: 99px;
+                width: 80px;
+                height: 38px;
+            }
+            .butt_yand_slider_blue {
+                position: absolute;
+                cursor: pointer;
+                background: #27279C;
+                border-radius: 99px;
+                width: 80px;
+                height: 38px;
+            }
+            .butt_yand_slider_white {
+                position: absolute;
+                cursor: pointer;
+                background: #E3D2C3;
+                border-radius: 99px;
+                width: 80px;
+                height: 38px;
+            }
+        }
+    }
+}

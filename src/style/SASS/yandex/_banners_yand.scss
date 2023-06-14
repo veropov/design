@@ -1,0 +1,79 @@
+.yand_banner_cont {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 10;
+    background: white;
+    .yand_banner_page {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 100px;
+        width: 1200px;
+        .yand_banner_main {
+        width: 375px;
+            .yand_banner_text {
+                position: absolute;
+                margin-left: 70px;
+                .yand_banner_title {
+                    margin-top: 40px;
+                    .yand_banner_title_p {
+                        font-family: 'Roboto';
+                        font-weight: 300;
+                        color: white;
+                        font-size: 32px;
+                    }
+                }
+                .yand_banner_title_subtitle {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 400px;
+                    gap: 15px;
+                    .yand_banner_title_bold {
+                        color: white;
+                        font-family: 'Roboto';
+                        font-size: 18px;
+                        font-weight: 500;
+                        width: 220px;
+                        line-height: 125%;
+                    }
+                    .yand_banner_title_light {
+                        color: white;
+                        font-family: 'Roboto';
+                        width: 228px;
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 125%;
+                    }
+                }
+            }
+            .yand_banner_img {
+                width: 400px;
+                img {
+                    width: 375px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .yand_banner_cont {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        z-index: 10;
+        background: white;
+        .yand_banner_page {
+            flex-direction: column;
+            width: 340px;
+            display: flex;
+            align-items: center;
+            .yand_banner_main {
+                margin-top: 0px;
+            }
+        }
+    }
+}

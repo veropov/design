@@ -1,7 +1,8 @@
 import MusicImg from './style/assets/music.png';
-import test from './style/Lottie/test2.json';
+import music from './style/Lottie/music.lottie';
 import  Lottie  from "lottie-react";
 import Union from './style/assets/Union.png';
+import '@dotlottie/player-component';
 
 export default function MusicPageYand() {
 
@@ -9,7 +10,11 @@ export default function MusicPageYand() {
     function MusicAnim() {
         return (
             <div className='music_anim'>
-                <Lottie animationData={test} loop={true} />
+                <dotlottie-player
+                    src={music}
+                    autoplay
+                    loop
+                />
             </div>
         )    
     }
