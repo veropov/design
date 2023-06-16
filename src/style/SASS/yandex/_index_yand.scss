@@ -60,6 +60,7 @@
                     padding: 0px;
                     gap: 25px;
                     .yan_b {
+                        font-family: 'Roboto';
                         font-style: normal;
                         font-weight: 400;
                         font-size: 90px;
@@ -67,6 +68,7 @@
                         z-index: 1;
                     }
                     .yan_p {
+                        font-family: 'Roboto';
                         font-style: normal;
                         font-weight: 400;
                         font-size: 24px;
@@ -86,6 +88,8 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        width: 100%;
+        background: rgb(241, 241, 241);
         .container_main_yand {
             display: flex;
             flex-direction: column;
@@ -101,7 +105,7 @@
                 justify-content: center;
                 gap: 10px;
                 z-index: 10;
-                background: rgb(241, 241, 241);
+
                 width: 115%;
                 .homeYan_cont {
                     margin-top: 40px;

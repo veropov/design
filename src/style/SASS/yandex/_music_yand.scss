@@ -43,27 +43,27 @@
             }
         }
         .title_h1 {
-
+            font-family: 'Roboto';
             font-style: normal;
             font-weight: 400;
             font-size: 90px;
         }
         .title_h2 {
-
+            font-family: 'Roboto';
             font-style: normal;
             font-weight: 400;
             font-size: 18px;
             line-height: 125%;
         }
         .title_h2_bold {
-
+            font-family: 'Roboto';
             font-style: normal;
             font-weight: 700;
             font-size: 18px;
             line-height: 125%;
         }
         .title_h3 {
-
+            font-family: 'Roboto';
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -86,9 +86,8 @@
     }
     .music_union {
         display: none;
-        z-index: 0;
         position: absolute;
-        transform: translate(-235px, -150px);
+        transform: translate(-235px, 0px);
     }
 }
 
@@ -162,17 +161,20 @@
             display: none;
         }
         .music_anim {
+            display: none;
             position: absolute;
             transform: translate(0px, -260px);
             width: 650px;
             z-index: 1;
-                overflow: hidden;
+            overflow: hidden;
         }
         .music_union {
-            display: none;
-            z-index: 0;
+            display: flex;
+            z-index: 1;
             position: absolute;
-            transform: translate(-235px, -335px);
+            transform: translate(85px, -155px);
+            width: 600px;
+            height: 450px;
         }
     }    
 }
