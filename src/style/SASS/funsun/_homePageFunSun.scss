@@ -1,0 +1,31 @@
+.main-fun-sun {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: white;
+    border-radius: 16px;
+    .container_main-fun-sun {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        .sub_cont-fun-sun {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            .home_Fun {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0px;
+                max-height: 750px;
+                object-fit: cover;
+                overflow: hidden;
+            }
+        }
+    }
+}

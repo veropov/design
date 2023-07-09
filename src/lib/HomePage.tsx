@@ -180,7 +180,7 @@ const banner = new Banner(
                 </div>
                 </div>
                 <div className="sub_cont">
-                    <p className='title_cont'>Моушен дизайн</p>
+                    <p className='title_cont'>Анимация</p>
                     <PrArea />
                 </div>
             </div>

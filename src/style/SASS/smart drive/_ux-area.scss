@@ -1,0 +1,165 @@
+.Smart-ux-area {
+    display: flex;
+    height: 150px;
+    width: 580px;
+    padding: 0px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 16px;
+    background: transparent;
+    .Smart-ux-area-area {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 25px;
+        align-self: stretch;
+
+        .Smart-ux-leading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            border-radius: 16px;
+
+            position: relative;
+            z-index: 10;
+            background: $back1;
+            border-radius: 16px;
+            padding: 10px;
+        }
+        .Smart-ux-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex: 1 0 0;
+            align-self: stretch;
+            position: relative;
+            z-index: 10;
+            background: white;
+            border-radius: 8px;
+            padding: 10px;
+            gap: 25px;
+            .Smart-ux-content-text {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+                .Smart-ux-content-text-title {
+                    color: #333;
+                    font-size: 18px;
+                    font-family: 'Jost';
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 130%;
+                }
+                .Smart-ux-content-text-subtitle {
+                    color: #333;
+                    font-size: 15px;
+                    font-family: 'Jost';
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 130%;
+                }
+            }
+            .Smart-ux-content-bottom {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                align-self: stretch;
+                .Smart-ux-content-bottom-back {
+                    display: flex;
+                    width: 26px;
+                    height: 26px;
+                    justify-content: center;
+                    align-items: center;
+
+                    background: $back1;
+                    border-radius: 99px;
+                }
+                .Smart-ux-content-bottom-text {
+                    display: flex;
+                    width: 275px;
+                    flex-direction: column;
+                    color: #333;
+                    font-size: 13px;
+                    font-family: 'Jost';
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 130%;
+                }
+            }
+        }
+        .Smart-ux-tralling {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 10px;
+            padding: 10px;
+            background: white;
+            position: relative;
+            border-radius: 8px;
+            z-index: 10;
+            .Smart-ux-tralling-back {
+                display: flex;
+                width: 26px;
+                height: 26px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+                border-radius: 99px;
+                background: $back1;
+            }
+        }
+    }
+}
+
+.sub_cont_smart {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    align-self: stretch;
+    margin-bottom: 40px;
+    width: 1200px;
+    .Smart-ux-container {
+        display: flex;
+        gap: 25px;
+        flex-direction: column;
+        .Smart-ux-area-main {
+            height: 150px;
+            width: 580px;
+            display: flex;
+            position: relative;
+            border-radius: 16px;
+            background: white;
+            overflow: hidden;
+            cursor: pointer;
+            transition: linear .15s;
+            &:hover {
+                transform: translateX(6px);
+            }
+        }
+    }
+}
+
+
+
+.lottie_smart {
+    position: absolute;
+    object-fit: cover;
+    width: 580px;
+    transform: translate(0px, -180px);
+    z-index: 1;
+}
+
+.title_cont_smart {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 130%;
+}
+

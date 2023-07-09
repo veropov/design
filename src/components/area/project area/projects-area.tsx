@@ -4,6 +4,7 @@ import Fun from '../project area/yand.jpg';
 import Lottie from "lottie-react";
 import trans from './trans_test.json';
 import { Player} from '@lottiefiles/react-lottie-player';
+import HomePageFunSun from "../../../funsun/FunSunHomePage";
 
 
     function ProjArea() {
@@ -52,9 +53,9 @@ import { Player} from '@lottiefiles/react-lottie-player';
             <div className="lottie_proj">
                 <Player
                     autoplay={true}
-                    loop={true} 
+                    loop={false} 
                     src={trans}
-                    renderer='svg'
+                    speed={0.6}
                     direction={1}
                 />
             </div>
@@ -62,23 +63,27 @@ import { Player} from '@lottiefiles/react-lottie-player';
     }
 
         return (
-            <div className="portfolio_main">
-                {proj.objects.map((elem, index) => (
-                <a href={hrefHome[index]}>
-                    <div 
-                        className="proj_area" 
-                        onMouseEnter={() => toggleHover(index)}
-                        // onMouseLeave={() => toggleDisHover()}
-                    >
-                        <div className="proj_cont">
-                            <p className="title_proj">{title[index]}</p>
-                            <p className="subTitle_proj">{subTitle[index]}</p>
+            <div className="porfolio_cont_m">
+                <HomePageFunSun />
+                <div className="portfolio_main">
+                    {proj.objects.map((elem, index) => (
+                    <a href={hrefHome[index]}>
+                        <div 
+                            className="proj_area" 
+                            onMouseEnter={() => toggleHover(index)}
+                            onMouseLeave={() => toggleDisHover()}
+                        >
+                            <div className="proj_cont">
+                                <p className="title_proj">{title[index]}</p>
+                                <p className="subTitle_proj">{subTitle[index]}</p>
+                            </div>
+                            <img src={`${image[index]}`}/>
+                            {lottieActive(index)}
                         </div>
-                        <img src={`${image[index]}`}/>
-                        {lottieActive(index)}
-                    </div>
-                </a>
-                ))}
+                    </a>
+                    ))}
+                </div>
+
             </div>
         )
     }

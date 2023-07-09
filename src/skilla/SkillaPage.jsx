@@ -23,6 +23,7 @@ const SkillaPage = () => {
 
     const [fill, setFill] = useState(DataFilt.filterData)
     const [arg, setArg] = useState(false);
+    const [checkR, setCheckR] = useState(fill.check)
     const argR = (arg) => {
         return setArg(!arg)
     }
@@ -146,6 +147,8 @@ const SkillaPage = () => {
                                     activeFill={activeFill} 
                                     argR={argR}
                                     arg={arg}
+                                    count={count}
+                                    checkR={checkR}
                                 />
                                 {filterItem.map((object, index) => (
                                     Filter(`${filterItem[index]}`, styleFilter[index])

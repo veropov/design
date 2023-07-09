@@ -5,6 +5,7 @@ import ItPage from "./lib/ItPage";
 import ProjectPage from "./lib/ProjectPage";
 import HomePageYand from "./yandex/HomeYand";
 import SkillaPage from "./skilla/SkillaPage";
+import { SmartUxArea } from "./components/Smart drive/SmartPage";
 
 export default function App() {
     return (
@@ -16,6 +17,8 @@ export default function App() {
                 <Route path="/project" element={ProjectPage()}/>
                 <Route path="/yandex" element={HomePageYand()}/>
                 <Route path="/skilla" element={SkillaPage()}/>
+                
+                <Route path="/smart-drive" element={SmartUxArea()}/>
             </Routes>
         </div>
     )

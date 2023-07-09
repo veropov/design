@@ -27,6 +27,7 @@ export const Filters = ({objects, activeNu, id, checkR, countR, count}) => {
         <div 
         key={objects.id}
         onClick={ () => {
+            console.log(checkR)
             activeNu(id, checkR) 
             countR(count, checkR)
         }}

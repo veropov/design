@@ -2,29 +2,29 @@
     background: radial-gradient(74.08% 1695.93% at 12.04% 80.92%, rgba(175, 193, 255, 0.2) 0%, rgba(112, 0, 255, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, linear-gradient(86.99deg, #BAC5FF 0.2%, #EFCDFF 99.48%);
     border-radius: 16px;
     width: 100%;
-    max-width: 1600px;
-    height: 400px;
+    max-width: 1200px;
+    height: 350px;
     overflow: hidden;
     z-index: 1;
     a {
         text-decoration: none;
     }
     img {
-        max-width: 1640px;
+        max-width: 1400px;
         object-fit: cover;
         position: relative;
         z-index: 2;
-        transform: translate(-4px, -404px);
+        transform: translate(-108px, -350px);
     }
     .frame_banner {
-        max-width: 1600px;
+        max-width: 1200px;
         object-fit: cover;
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 400px;
+        height: 350px;
         padding: 30px;
         gap: 25px;
         z-index: 10;
@@ -57,6 +57,66 @@
     font-weight: 700;
     font-size: 18px;
 }
+
+.container_state_banner {
+    background: radial-gradient(74.08% 1695.93% at 12.04% 80.92%, rgba(175, 193, 255, 0.2) 0%, rgba(112, 0, 255, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, linear-gradient(86.99deg, #BAC5FF 0.2%, #EFCDFF 99.48%);
+    border-radius: 16px;
+    width: 100%;
+    max-width: 1200px;
+    height: 400px;
+    overflow: hidden;
+    z-index: 1;
+    a {
+        text-decoration: none;
+    }
+    .frame_back {
+        max-width: 1240px;
+        object-fit: cover;
+        position: relative;
+        z-index: 0;
+        transform: translate(-14px, -400px);
+    }
+    .sub_container_state_banner {
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        width: 1200px;
+        height: 400px;
+        .frame_state_banner {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 10px;
+            padding: 50px;
+            .p_state_banner {
+                font-family: 'Jost';
+                font-weight: 500;
+                font-size: 58px;
+                line-height: 110%;
+                text-align: center;
+            }
+            .p_state_light_banner {
+                width: 520px;
+                font-family: 'Jost';
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%; 
+            }
+        }
+        .smartImg {
+            z-index: 3;
+            position: relative;
+            width: 795px;
+            height: 328px;
+            transform: translate(0px, 90px);
+        }
+    }
+}
+
 
 @media only screen and (max-width: 420px) {
 

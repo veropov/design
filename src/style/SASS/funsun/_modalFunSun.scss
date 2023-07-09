@@ -1,0 +1,30 @@
+.modal_fun_sun_1 {
+    margin-top: 70px;
+    width: 250px;
+    height: 500px;
+    border-radius: 8px;
+    background: rgb(255, 166, 166);
+    clip-path: circle(145% at 50% 50%);
+    transition: clip-path .4s ease-in;
+    position: absolute;
+    box-shadow: 0 8px 22px rgba(0,0,0,.07);
+    z-index: 100;
+    padding: 16px 8px 16px 0;
+    .modal_fun_sun_search{
+        
+    }
+}
+
+.modal_fun_sun_none {
+    margin-top: 70px;
+    width: 250px;
+    height: 500px;
+    border-radius: 8px;
+    background: white;
+    clip-path: circle(0% at 50% 50%);
+    transition: clip-path .4s ease-in;
+    position: absolute;
+    box-shadow: 0 8px 22px rgba(0,0,0,.07);
+    z-index: 100;
+    padding: 16px 8px 16px 0;
+}

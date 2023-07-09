@@ -1,12 +1,4 @@
 import { useEffect, useState } from "react"
-import blackButt from './style/Lottie/slider/black-button.lottie';
-import blackMusic from './style/Lottie/slider/black-music.lottie';
-import redButt from './style/Lottie/slider/red-button.lottie';
-import redMusic from './style/Lottie/slider/red-music.lottie';
-import whiteButt from './style/Lottie/slider/white-button.lottie';
-import whiteMusic from './style/Lottie/slider/white-music.lottie';
-import blueButt from './style/Lottie/slider/blue-button.lottie';
-import blueMusic from './style/Lottie/slider/blue-music.lottie';
 
 import blacB from './style/Lottie/slider/new/bb.lottie';
 import blacM from './style/Lottie/slider/new/bm.lottie';
@@ -23,7 +15,6 @@ import blueTrans from './style/Lottie/slider/trans/blue-trans-slider.lottie';
 import whiteTrans from './style/Lottie/slider/trans/white-trans-slider.lottie';
 
 import '@dotlottie/player-component';
-import Lottie from "lottie-react";
 
 import black from './style/assets/black.jpg';
 import blue from './style/assets/blue.jpg';

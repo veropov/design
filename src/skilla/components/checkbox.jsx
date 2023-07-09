@@ -9,7 +9,7 @@ export const CheckB = () => {
     )
 }
 
-export const CheckAll = ({activeFill, argR, arg}) => {
+export const CheckAll = ({activeFill, argR, arg, count, checkR}) => {
 
     function ArgCheck() {
         if (arg === false) {
@@ -19,7 +19,7 @@ export const CheckAll = ({activeFill, argR, arg}) => {
 
     return (
         <div className={ArgCheck()} onClick={() => {
-            console.log(arg)
+            console.log(count)
             activeFill(arg)
             argR(arg)
         }
