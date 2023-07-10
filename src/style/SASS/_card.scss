@@ -1,0 +1,96 @@
+.smart-card-hidden {
+    width: 382px;
+    height: 80px;
+    background: #FFF;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .15s linear;
+    &:hover {
+        transform: translateY(6px);
+    }
+    .card-ui-main {
+        display: flex;
+        width: 382px;
+        height: 80px;
+        align-items: center;
+        flex-shrink: 0;
+        border-radius: 8px;
+        background: transparent;
+        overflow: hidden;
+        .card-content {
+            display: flex;
+            padding: 16px;
+            align-items: center;
+            gap: 16px;
+            flex: 1 0 0;
+            align-self: stretch;
+            position: relative;
+            z-index: 10;
+            .card-text {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 2px;
+                flex: 1 0 0;
+                background: white;
+                padding: 6px;
+                width: 200px;
+                border-radius: 8px;
+                .card-text-title {
+                    font-family: 'Roboto';
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 130%;
+                    letter-spacing: 0.15px;
+                }
+                .card-text-subTitle {
+                    text-align: center;
+                    font-family: 'Roboto';
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 20px;
+                    letter-spacing: 0.25px;
+                }
+            }
+        }
+        .card-media {
+            display: flex;
+            width: 180px;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            flex-shrink: 0;
+            align-self: stretch;
+            background: (linear-gradient(315deg, rgb(183 138 255) 0%, #B0D9FF 100%));
+            position: relative;
+            z-index: 10;
+        }
+    }
+}
+
+.smart-reg {
+    width: 350px;
+    position: relative;
+    transform: translate(25px, 0px);
+}
+
+.smart-card-main {
+    display: flex;
+    width: 1200px;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.lottie_card_smart {
+    position: relative;
+    width: 260px;
+    transform: translate(-20px, -120px);
+    z-index: 0;
+}
