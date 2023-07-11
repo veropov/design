@@ -1,6 +1,14 @@
 import { useState } from "react";
 import { CardUi } from "../../card/card-ui"
+
 import smartReg from '../../card/img/smart-reg.png';
+import smartProg from '../../card/img/smart-progress.png';
+import smartRating from '../../card/img/smart-rating.png';
+import smartHistory from '../../card/img/smart-history.png';
+import smartHelp from '../../card/img/smart-help.png';
+import smartNotif from '../../card/img/smart-notif.png';
+
+
 import { Player } from "@lottiefiles/react-lottie-player";
 import trans from '../../area/project area/trans_test.json';
 import Header from "../../../lib/header";
@@ -8,6 +16,7 @@ import { StateBanner } from "../../banner/banner";
 
 import ujmImg from '../../banner/img banner/UJM-Back.jpg';
 import smartHome from '../../banner/img banner/UJM-Home.png';
+import { TextAreaVert3 } from "../../area/text-area-vert";
 
 export const UJMHome = () => {
 
@@ -46,7 +55,7 @@ export const UJMHome = () => {
                     autoplay={true}
                     loop={true} 
                     src={trans}
-                    speed={0.6}
+                    speed={0.8}
                     direction={1}
                 />
             </div>
@@ -57,7 +66,7 @@ export const UJMHome = () => {
         'Регистрация',
         'Прогресс вождения',
         'История вождения',
-        'Рейтинг автомобилистов',
+        'Поддержка',
         'Уведомления',
         'Профиль',
     ]
@@ -73,11 +82,20 @@ export const UJMHome = () => {
 
     const img = [
         smartReg,
+        smartProg,
+        smartHistory,
+        smartHelp,
+        smartNotif,
         smartReg,
-        smartReg,
-        smartReg,
-        smartReg,
-        smartReg,
+    ]
+
+    const classN = [
+        "smart-reg",
+        "smart-progress",
+        "smart-second",
+        "smart-second",
+        "smart-reg",
+        "smart-reg",
     ]
 
 
@@ -87,6 +105,8 @@ export const UJMHome = () => {
             <div className="main">
             <div className="container_main-1">
                 {banner.StateDots()}
+                <div className="sub_cont">
+                    <p className='title_cont_smart'>Точки взаимодействия</p>
                     <div className="smart-card-main">
                         {proj.objects.map((obj, index) => (
                             <div 
@@ -99,13 +119,26 @@ export const UJMHome = () => {
                                     title={title[index]}
                                     subTitle={subTitle[index]}
                                     img={img[index]}
+                                    classN={classN[index]}
                                 />
                                 {lottieActive(index)}
                         </div>
                     ))}
                     </div>
                 </div>
+                <div className="sub_cont_smart">
+                    <TextAreaVert3 
+                        name={'Описание'} 
+                        title={'Наследование'} 
+                        subTitle={'Карта пользователя Smart drive была унаследована из FigJam и включает в себя анализ основного пути пользователя. Я сделал большой акцент в сторону эмоций при взаимодействии с интерфейсом, так как функционал приложения повторяет старую версию без обновленного UI.'} 
+                        title2={'Опыт'} 
+                        subTitle2={'В моем тестировании участвовало 2 человека из целевой аудитории, поэтому я объединил их в одну карту. Так как в центре UJM находится опыт пользователя, все тесты я проводил на прототипах, созданных на фреймворке flutter. '} 
+                        title3={'Целевая аудитория'} 
+                        subTitle3={'В моем тестировании участвовало 2 человека из целевой аудитории, поэтому я объединил их в одну карту. Так как в центре UJM находится опыт пользователя, все тесты я проводил на прототипах, созданных на фреймворке flutter. '} 
+                    />
+                </div>
             </div>
+        </div>
         </div>
     )
 }

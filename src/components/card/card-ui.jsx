@@ -1,6 +1,6 @@
 
 
-export const CardUi = ({title, subTitle, img}) => {
+export const CardUi = ({title, subTitle, img, classN}) => {
 
     return (
         <div className="card-ui-main">
@@ -11,7 +11,7 @@ export const CardUi = ({title, subTitle, img}) => {
                 </div>
             </div>
             <div className="card-media">
-                <img className="smart-reg" src={img} />
+                <img className={classN} src={img} />
             </div>
         </div>
     )

@@ -7,7 +7,7 @@
     cursor: pointer;
     transition: .15s linear;
     &:hover {
-        transform: translateY(6px);
+        transform: translateY(4px);
     }
     .card-ui-main {
         display: flex;
@@ -72,9 +72,21 @@
 }
 
 .smart-reg {
-    width: 350px;
+    width: 56px;
     position: relative;
-    transform: translate(25px, 0px);
+    transform: translate(48px, 0px);
+}
+
+.smart-progress {
+    width: 150px;
+    position: relative;
+    transform: translate(1px, 2px);
+}
+
+.smart-second {
+    width: 62px;
+    position: relative;
+    transform: translate(44px, 0px);
 }
 
 .smart-card-main {
@@ -85,12 +97,11 @@
     align-content: flex-start;
     gap: 25px;
     flex-wrap: wrap;
-    margin-bottom: 30px;
 }
 
 .lottie_card_smart {
     position: relative;
-    width: 260px;
-    transform: translate(-20px, -120px);
+    width: 340px;
+    transform: translate(-100px, -120px);
     z-index: 0;
 }

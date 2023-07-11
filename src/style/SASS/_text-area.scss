@@ -1,0 +1,23 @@
+.text-area-main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+    .text-area-content {
+        display: flex;
+        width: 560px;
+        padding: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        border-radius: 16px;
+        background: #FFF;
+        gap: 25px;
+        .text-area-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            align-self: stretch;
+        }
+    }
+}

@@ -10,7 +10,13 @@
 .bold_p {
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 20px;
+}
+
+.info_p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
 }
 
 $back1: #F8F8FE;
@@ -54,6 +60,7 @@ $typo_color: #333333;
 @import './_banner.scss';
 @import './_project.scss';
 @import './_banner-ux.scss';
+@import './text-area';
 
 @import './yandex/_index_yand.scss';
 @import './yandex/_music_yand.scss';

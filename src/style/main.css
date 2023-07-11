@@ -10,7 +10,13 @@
 .bold_p {
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 20px;
+}
+
+.info_p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
 }
 
 .container_preloader {
@@ -64,7 +70,7 @@
   font-family: "Jost";
   font-style: normal;
   font-weight: 600;
-  font-size: 34px;
+  font-size: 26px;
   line-height: 130%;
 }
 .main .container_main-1 .sub_cont .about_me {
@@ -101,11 +107,6 @@
   align-items: flex-start;
   padding: 0px;
   gap: 10px;
-}
-.main .container_main-1 .sub_cont .about_me .info_main .container_info-1 .info_p {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 130%;
 }
 
 @media only screen and (max-width: 420px) {
@@ -623,7 +624,7 @@
   font-family: "Jost";
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 130%;
 }
 .proj_area .proj_cont .subTitle_proj {
@@ -922,7 +923,7 @@
 .project_container .cont_head_project .head_project .title_project p {
   font-style: normal;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 130%;
 }
 .project_container .cont_head_project .head_project .title_project .type_project {
@@ -1700,6 +1701,30 @@
     text-align: center;
   }
 }
+.text-area-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+}
+.text-area-main .text-area-content {
+  display: flex;
+  width: 560px;
+  padding: 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 16px;
+  background: #FFF;
+  gap: 25px;
+}
+.text-area-main .text-area-content .text-area-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+
 .main_yand {
   display: flex;
   align-items: center;
@@ -3312,7 +3337,7 @@
   transition: 0.15s linear;
 }
 .smart-card-hidden:hover {
-  transform: translateY(6px);
+  transform: translateY(4px);
 }
 .smart-card-hidden .card-ui-main {
   display: flex;
@@ -3376,9 +3401,21 @@
 }
 
 .smart-reg {
-  width: 350px;
+  width: 56px;
   position: relative;
-  transform: translate(25px, 0px);
+  transform: translate(48px, 0px);
+}
+
+.smart-progress {
+  width: 150px;
+  position: relative;
+  transform: translate(1px, 2px);
+}
+
+.smart-second {
+  width: 62px;
+  position: relative;
+  transform: translate(44px, 0px);
 }
 
 .smart-card-main {
@@ -3389,13 +3426,12 @@
   align-content: flex-start;
   gap: 25px;
   flex-wrap: wrap;
-  margin-bottom: 30px;
 }
 
 .lottie_card_smart {
   position: relative;
-  width: 260px;
-  transform: translate(-20px, -120px);
+  width: 340px;
+  transform: translate(-100px, -120px);
   z-index: 0;
 }
 
@@ -3519,7 +3555,7 @@
   align-items: flex-start;
   gap: 40px;
   align-self: stretch;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   width: 1200px;
 }
 .sub_cont_smart .Smart-ux-container {
