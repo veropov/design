@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { CardUi } from "../../card/card-ui"
 import {BottomNavigation} from '../../bottom navigation/bottom-navigation';
-
+import { NavLink } from "react-router-dom";
 import smartReg from '../../card/img/smart-reg.png';
 import smartProg from '../../card/img/smart-progress.png';
 import smartRating from '../../card/img/smart-rating.png';
@@ -99,6 +99,15 @@ export const UJMHome = () => {
         "smart-reg",
     ]
 
+    const hrefUJM = [
+        '/smart-drive/ujm/reg',
+        '/smart-drive/ujm/reg',
+        '/smart-drive/ujm/reg',
+        '/smart-drive/ujm/reg',
+        '/smart-drive/ujm/reg',
+        '/smart-drive/ujm/reg',
+    ]
+
 
     return (
         <div className="container">
@@ -110,23 +119,25 @@ export const UJMHome = () => {
                     <p className='title_cont_smart'>Точки взаимодействия</p>
                     <div className="smart-card-main">
                         {proj.objects.map((obj, index) => (
-                            <div 
-                                className="smart-card-hidden"
-                                onMouseEnter={() => toggleHover(index)}
-                                onMouseLeave={() => toggleDisHover()}
-                            >
-                                <CardUi 
-                                    title={title[index]}
-                                    subTitle={subTitle[index]}
-                                    img={img[index]}
-                                    classN={classN[index]}
-                                />
-                                {lottieActive(index)}
-                        </div>
+                            <NavLink to={hrefUJM[index]} style={{textDecoration: 'none'}}>
+                                <div 
+                                    className="smart-card-hidden"
+                                    onMouseEnter={() => toggleHover(index)}
+                                    onMouseLeave={() => toggleDisHover()}
+                                >
+                                    <CardUi 
+                                        title={title[index]}
+                                        subTitle={subTitle[index]}
+                                        img={img[index]}
+                                        classN={classN[index]}
+                                    />
+                                    {lottieActive(index)}
+                            </div>
+                        </NavLink>
                     ))}
                     </div>
                 </div>
-                    <TextAreaVert3 
+                <TextAreaVert3 
                         name={'Описание'} 
                         title={'Метод'} 
                         subTitle={'Карта пользователя Smart drive была унаследована из FigJam и представляет собой анализ основного пути пользователя на всех точках взаимодействия. Я сделал большой акцент в сторону эмоций при взаимодействии с интерфейсом, так как функционал приложения повторяет старую версию без обновленного UI.'} 
@@ -135,6 +146,9 @@ export const UJMHome = () => {
                         title3={'Целевая аудитория'} 
                         subTitle3={'В моем тестировании участвовало 2 человека из целевой аудитории, поэтому я объединил их в одну карту. Так как в центре UJM находится опыт пользователя, все тесты я проводил на прототипах, созданных на фреймворке flutter. '} 
                         video={smartVideo}
+                        figarea={false}
+                        linkFigma={''}
+                        linkFigjam={''}
                     />
                 <BottomNavigation 
                     subTitleP={'Перейти к '} 

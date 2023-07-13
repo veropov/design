@@ -1,4 +1,5 @@
 import ReactPlayer from "react-player"
+import { FigmaContainerArea } from "./figma-area"
 
 interface TextProps {
     name: String,
@@ -9,11 +10,15 @@ interface TextProps {
     title3: String,
     subTitle3: String,
     video: any,
-    width: any,
-    height: any
+    width?: any,
+    height?: any,
+    figarea?: boolean,
+    linkFigma?: String,
+    linkFigjam?: String
+
 }
 
-export const TextAreaVert1 = ({name, title, subTitle, video, width, height} : TextProps) => {
+export const TextAreaVert1 = ({name, title, subTitle, video, width, height, figarea, linkFigma, linkFigjam} : TextProps) => {
 
     const ktitle = [
         title
@@ -36,6 +41,7 @@ export const TextAreaVert1 = ({name, title, subTitle, video, width, height} : Te
                             </div>
                         ))}
                     </div>
+                    {figarea ? <FigmaContainerArea /> : null}
                 </div>
                 <div className="Smart-ujm-video-main">
                     <ReactPlayer 
@@ -53,7 +59,7 @@ export const TextAreaVert1 = ({name, title, subTitle, video, width, height} : Te
     )
 }
 
-export const TextAreaVert2 = ({name, title, subTitle, title2, subTitle2, video, width, height} : TextProps) => {
+export const TextAreaVert2 = ({name, title, subTitle, title2, subTitle2, video, width, height, figarea, linkFigma, linkFigjam} : TextProps) => {
 
     const ktitle = [
         title,
@@ -78,6 +84,7 @@ export const TextAreaVert2 = ({name, title, subTitle, title2, subTitle2, video, 
                             </div>
                         ))}
                     </div>
+                    {figarea ? <FigmaContainerArea /> : null}
                 </div>
                 <div className="Smart-ujm-video-main">
                     <ReactPlayer 
@@ -95,7 +102,7 @@ export const TextAreaVert2 = ({name, title, subTitle, title2, subTitle2, video, 
     )
 }
 
-export const TextAreaVert3 = ({name, title, subTitle, title2, subTitle2, title3, subTitle3, video, width, height} : TextProps) => {
+export const TextAreaVert3 = ({name, title, subTitle, title2, subTitle2, title3, subTitle3, video, width, height, figarea, linkFigma, linkFigjam} : TextProps) => {
 
     const ktitle = [
         title,
@@ -122,6 +129,7 @@ export const TextAreaVert3 = ({name, title, subTitle, title2, subTitle2, title3,
                             </div>
                         ))}
                     </div>
+                    {figarea ? <FigmaContainerArea /> : null}
                 </div>
                 <div className="Smart-ujm-video-main">
                     <ReactPlayer 

@@ -9,6 +9,7 @@ import driveImg from '../banner/img banner/Smart-drive.jpg';
 import smartHome from '../banner/img banner/Smart-Home.png';
 import { SmartUxAreaUI } from "./UI/SmartUI";
 import driveUI from './style/img/Smart-UI.png';
+import { NavLink } from "react-router-dom";
 
 export const SmartUxArea = () => {
 
@@ -17,6 +18,12 @@ export const SmartUxArea = () => {
         <SmartUserFlow />,
         <SmartUserStories />
     ];
+
+    const hrefSmart = [
+        '/smart-drive/ujm',
+        '/smart-drive/ujm',
+        '/smart-drive/ujm'
+    ]
 
     const title = [
         'User Journey Map',
@@ -107,18 +114,20 @@ export const SmartUxArea = () => {
                             <p className='title_cont_smart'>Исследования</p>
                             <div className="Smart-ux-container">
                             {proj.objects.map((elem, index) => (
-                                <div className="Smart-ux-area-main"
-                                    onMouseEnter={() => toggleHover(index)}
-                                    onMouseLeave={() => toggleDisHover()}
-                                >
-                                    <SmartUxAreaUJM 
-                                        img={img[index]}
-                                        title={title[index]}
-                                        subTitle={subTitle[index]}
-                                        bottomText={bottomText[index]}
-                                    />
-                                    {lottieActive(index)}
-                                </div>
+                                <NavLink to={hrefSmart[index]} style={{textDecoration: 'none'}}>
+                                    <div className="Smart-ux-area-main"
+                                        onMouseEnter={() => toggleHover(index)}
+                                        onMouseLeave={() => toggleDisHover()}
+                                    >
+                                        <SmartUxAreaUJM 
+                                            img={img[index]}
+                                            title={title[index]}
+                                            subTitle={subTitle[index]}
+                                            bottomText={bottomText[index]}
+                                        />
+                                        {lottieActive(index)}
+                                    </div>
+                                </NavLink>
                             ))}
                             </div>
                         </div>

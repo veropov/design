@@ -5,9 +5,7 @@ import '@dotlottie/player-component';
 
 export default function TransitionYand() {
 
-    const [bossan, setBoss] = useState(false);
-
-    useEffect(() => setBoss(true))
+    const [bossan, setBoss] = useState(true);
 
     function BossAnim() {
         if (bossan === true) {
@@ -26,7 +24,7 @@ export default function TransitionYand() {
         function bossAnn() {
             setTimeout(() => {
                 setBoss(!bossan)
-            }, 10000)
+            }, 5000)
         }
 
         useEffect(() => bossAnn())
