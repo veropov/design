@@ -1,3 +1,5 @@
+import ReactPlayer from "react-player"
+
 interface TextProps {
     name: String,
     title: String,
@@ -6,9 +8,12 @@ interface TextProps {
     subTitle2: String,
     title3: String,
     subTitle3: String,
+    video: any,
+    width: any,
+    height: any
 }
 
-export const TextAreaVert1 = ({name, title, subTitle} : TextProps) => {
+export const TextAreaVert1 = ({name, title, subTitle, video, width, height} : TextProps) => {
 
     const ktitle = [
         title
@@ -20,20 +25,35 @@ export const TextAreaVert1 = ({name, title, subTitle} : TextProps) => {
 
     return (
         <div className="sub_cont">
-            <p className='title_cont_smart'>{name}</p>
-            <div className="text-area-main">
-                <div className="text-area-content">
-                    <div className="text-area-text">
-                        <p className="bold_p">{ktitle[0]}</p>
-                        <p className="info_p">{ksubTitle[0]}</p>
+        <p className='title_cont_smart'>{name}</p>
+            <div className="sub_cont_smart_video">
+                <div className="text-area-main">
+                    <div className="text-area-content">
+                        {ktitle.map((el, index) => (
+                            <div className="text-area-text">
+                                <p className="bold_p">{ktitle[index]}</p>
+                                <p className="info_p">{ksubTitle[index]}</p>
+                            </div>
+                        ))}
                     </div>
+                </div>
+                <div className="Smart-ujm-video-main">
+                    <ReactPlayer 
+                        url={video}
+                        className="Smart-ujm-video"
+                        playing={true}
+                        loop={true}
+                        width={width}
+                        height={height}
+                        autoPlay muted
+                    />
                 </div>
             </div>
         </div>
     )
 }
 
-export const TextAreaVert2 = ({name, title, subTitle, title2, subTitle2} : TextProps) => {
+export const TextAreaVert2 = ({name, title, subTitle, title2, subTitle2, video, width, height} : TextProps) => {
 
     const ktitle = [
         title,
@@ -47,22 +67,35 @@ export const TextAreaVert2 = ({name, title, subTitle, title2, subTitle2} : TextP
 
     return (
         <div className="sub_cont">
-            <p className='title_cont_smart'>{name}</p>
-            <div className="text-area-main">
-                {ktitle.map((el, index) => (
+        <p className='title_cont_smart'>{name}</p>
+            <div className="sub_cont_smart_video">
+                <div className="text-area-main">
                     <div className="text-area-content">
-                        <div className="text-area-text">
-                            <p className="bold_p">{ktitle[index]}</p>
-                            <p className="info_p">{ksubTitle[index]}</p>
-                        </div>
+                        {ktitle.map((el, index) => (
+                            <div className="text-area-text">
+                                <p className="bold_p">{ktitle[index]}</p>
+                                <p className="info_p">{ksubTitle[index]}</p>
+                            </div>
+                        ))}
                     </div>
-                ))}
+                </div>
+                <div className="Smart-ujm-video-main">
+                    <ReactPlayer 
+                        url={video}
+                        className="Smart-ujm-video"
+                        playing={true}
+                        loop={true}
+                        width={width}
+                        height={height}
+                        autoPlay muted
+                    />
+                </div>
             </div>
         </div>
     )
 }
 
-export const TextAreaVert3 = ({name, title, subTitle, title2, subTitle2, title3, subTitle3} : TextProps) => {
+export const TextAreaVert3 = ({name, title, subTitle, title2, subTitle2, title3, subTitle3, video, width, height} : TextProps) => {
 
     const ktitle = [
         title,
@@ -79,14 +112,27 @@ export const TextAreaVert3 = ({name, title, subTitle, title2, subTitle2, title3,
     return (
         <div className="sub_cont">
             <p className='title_cont_smart'>{name}</p>
-            <div className="text-area-main">
-                <div className="text-area-content">
-                    {ktitle.map((el, index) => (
-                        <div className="text-area-text">
-                            <p className="bold_p">{ktitle[index]}</p>
-                            <p className="info_p">{ksubTitle[index]}</p>
-                        </div>
-                    ))}
+            <div className="sub_cont_smart_video">
+                <div className="text-area-main">
+                    <div className="text-area-content">
+                        {ktitle.map((el, index) => (
+                            <div className="text-area-text">
+                                <p className="bold_p">{ktitle[index]}</p>
+                                <p className="info_p">{ksubTitle[index]}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                <div className="Smart-ujm-video-main">
+                    <ReactPlayer 
+                        url={video}
+                        className="Smart-ujm-video"
+                        playing={true}
+                        loop={true}
+                        width={width}
+                        height={height}
+                        autoPlay muted
+                    />
                 </div>
             </div>
         </div>

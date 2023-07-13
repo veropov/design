@@ -61,6 +61,7 @@ $typo_color: #333333;
 @import './_project.scss';
 @import './_banner-ux.scss';
 @import './text-area';
+@import './nav';
 
 @import './yandex/_index_yand.scss';
 @import './yandex/_music_yand.scss';
@@ -76,6 +77,7 @@ $typo_color: #333333;
 @import './funsun/modalFunSun';
 
 @import './card';
+@import './smart drive/smart-video';
 
 @import './smart drive/ux-area';
 @import './smart drive/ui-area';

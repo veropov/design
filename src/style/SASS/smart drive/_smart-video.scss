@@ -1,0 +1,23 @@
+.Smart-ujm-video-main {
+    border-radius: 16px;
+    overflow: hidden;
+    width: 700px; 
+    height: 700px;
+    position: relative;
+    transform: translate(0px, 0px);
+    border: 1.5px solid rgb(195, 197, 209);
+    .Smart-ujm-video {
+        width: 700px !important;
+        height: 700px !important;
+        position: relative;
+        transform: translate(0px, 0px);
+    }
+}
+
+.sub_cont_smart_video {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    align-self: stretch;
+    width: 1200px;
+}

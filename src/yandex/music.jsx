@@ -1,6 +1,5 @@
 import MusicImg from './style/assets/music.png';
 import music from './style/Lottie/music.lottie';
-import  Lottie  from "lottie-react";
 import Union from './style/assets/Union.png';
 import '@dotlottie/player-component';
 
