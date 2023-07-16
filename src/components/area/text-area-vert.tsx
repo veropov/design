@@ -41,7 +41,7 @@ export const TextAreaVert1 = ({name, title, subTitle, video, width, height, figa
                             </div>
                         ))}
                     </div>
-                    {figarea ? <FigmaContainerArea /> : null}
+                    {figarea ? <FigmaContainerArea linkFigma={linkFigma} linkFigjam={linkFigjam} /> : null}
                 </div>
                 <div className="Smart-ujm-video-main">
                     <ReactPlayer 
@@ -84,7 +84,7 @@ export const TextAreaVert2 = ({name, title, subTitle, title2, subTitle2, video, 
                             </div>
                         ))}
                     </div>
-                    {figarea ? <FigmaContainerArea /> : null}
+                    {figarea ? <FigmaContainerArea linkFigma={linkFigma} linkFigjam={linkFigjam}/> : null}
                 </div>
                 <div className="Smart-ujm-video-main">
                     <ReactPlayer 
@@ -129,7 +129,7 @@ export const TextAreaVert3 = ({name, title, subTitle, title2, subTitle2, title3,
                             </div>
                         ))}
                     </div>
-                    {figarea ? <FigmaContainerArea /> : null}
+                    {figarea ? <FigmaContainerArea linkFigma={linkFigma} linkFigjam={linkFigjam} /> : null}
                 </div>
                 <div className="Smart-ujm-video-main">
                     <ReactPlayer 

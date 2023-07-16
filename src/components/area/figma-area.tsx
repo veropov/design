@@ -1,13 +1,24 @@
 import { useState } from "react"
 import { FigjamArea } from "./area img/area-svg"
 import { FigmaArea } from "./area img/area-svg"
+import { NavLink } from "react-router-dom"
+
+interface figmaArea {
+    linkFigma: any;
+    linkFigjam: any;
+}
 
 
-export const FigmaContainerArea = () => {
+export const FigmaContainerArea = ({linkFigma, linkFigjam} : figmaArea) => {
 
     const figmaImg = [
         <FigmaArea />,
         <FigjamArea />
+    ]
+
+    const hrefFigma = [
+        linkFigma,
+        linkFigjam
     ]
 
     const [figma, setFigma] = useState({
@@ -61,21 +72,23 @@ export const FigmaContainerArea = () => {
     return (
         <div className="text_f-f">
             {figma.obj.map((el, index) => (
-            <div className="text_area_figma"
-                onMouseEnter={() => (
-                    FigmaHover(index),
-                    kekFigma(index)
-                )}
-                onMouseLeave={() => (
-                    FigmaDisHover(),
-                    diskekFigma()
-                )}
-            >
-                <div className="figma_figjam">{figmaImg[index]}</div>
-                <div className={styleFigmaBorder(index)}></div>
-                <div className={stylekekFigma(index)}></div>
-                <div className={styleFigma(index)}></div>
-            </div>
+                <NavLink to={hrefFigma[index]} style={{textDecoration: 'none'}}>
+                    <div className="text_area_figma"
+                        onMouseEnter={() => (
+                            FigmaHover(index),
+                            kekFigma(index)
+                        )}
+                        onMouseLeave={() => (
+                            FigmaDisHover(),
+                            diskekFigma()
+                        )}
+                    >
+                        <div className="figma_figjam">{figmaImg[index]}</div>
+                        <div className={styleFigmaBorder(index)}></div>
+                        <div className={stylekekFigma(index)}></div>
+                        <div className={styleFigma(index)}></div>
+                    </div>
+                </NavLink>
             ))}
         </div>
     )

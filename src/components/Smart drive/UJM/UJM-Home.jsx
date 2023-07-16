@@ -17,7 +17,7 @@ import { StateBanner } from "../../banner/banner";
 
 import ujmImg from '../../banner/img banner/UJM-Back.jpg';
 import smartHome from '../../banner/img banner/UJM-Home.png';
-import { TextAreaVert3 } from "../../area/text-area-vert";
+import { TextAreaVert3, TextAreaVert2 } from "../../area/text-area-vert";
 
 export const UJMHome = () => {
 
@@ -137,18 +137,16 @@ export const UJMHome = () => {
                     ))}
                     </div>
                 </div>
-                <TextAreaVert3 
+                <TextAreaVert2
                         name={'Описание'} 
                         title={'Метод'} 
                         subTitle={'Карта пользователя Smart drive была унаследована из FigJam и представляет собой анализ основного пути пользователя на всех точках взаимодействия. Я сделал большой акцент в сторону эмоций при взаимодействии с интерфейсом, так как функционал приложения повторяет старую версию без обновленного UI.'} 
                         title2={'Опыт'} 
                         subTitle2={'В моем тестировании участвовало 2 человека из целевой аудитории, поэтому я объединил их в одну карту. Так как в центре UJM находится опыт пользователя, все тесты я проводил на прототипах, созданных на фреймворке flutter. '} 
-                        title3={'Целевая аудитория'} 
-                        subTitle3={'В моем тестировании участвовало 2 человека из целевой аудитории, поэтому я объединил их в одну карту. Так как в центре UJM находится опыт пользователя, все тесты я проводил на прототипах, созданных на фреймворке flutter. '} 
                         video={smartVideo}
-                        figarea={false}
-                        linkFigma={''}
-                        linkFigjam={''}
+                        figarea={true}
+                        linkFigma={'https://www.figma.com/file/KqSP2KCkcgf5dmwGOheM7M/Smart-drive?type=design&node-id=293-564&mode=design'}
+                        linkFigjam={'https://www.figma.com/file/HXQxQIc5bqHH9rU51EsryI/Smart-drive-UJM?type=whiteboard&node-id=0%3A1&t=cZEzRnD6GO18kd3E-1'}
                     />
                 <BottomNavigation 
                     subTitleP={'Перейти к '} 
