@@ -2,16 +2,24 @@ import { useState } from "react";
 import { BottomNavLeft } from "./bottom-nav-svg";
 import { BottomNavRight } from "./bottom-nav-svg";
 import { setTimeout } from "timers/promises";
+import { NavLink } from "react-router-dom";
 
 interface BtnNav {
     subTitleP: String,
     subTitleP2: String,
     subTitleB: String,
     subTitleB2: String,
+    enter: String,
+    back: String,
 
 }
 
-export const BottomNavigation = ({subTitleP, subTitleB, subTitleP2, subTitleB2} : BtnNav) => {
+export const BottomNavigation = ({subTitleP, subTitleB, subTitleP2, subTitleB2, enter, back} : BtnNav) => {
+
+    const hrefNavig = [
+        enter,
+        back
+    ]
 
     const iconNav = [
         (
@@ -91,25 +99,27 @@ export const BottomNavigation = ({subTitleP, subTitleB, subTitleP2, subTitleB2} 
     return (
         <div className="sub_cont_navigation">
             {nav.obj.map((el, index) => (
-                <div className='sub_navigation_main'
-                    onMouseEnter={() => (
-                        toggleHover(index),
-                        kek(index)
-                    )}
-                    onMouseLeave={() => (
-                        toggleDisHover(),
-                        diskek()
-                    )}
-                >
-                    {iconNav[index]}
-                    <div className="sub_navigation_content">
-                        <p className="sub_navigation_p">{titleP[index]}</p>
-                        <p className="sub_navigation_bold">{titleB[index]}</p>
+                <a href={hrefNavig[index] as any} style={{textDecoration: 'none'}}>
+                    <div className='sub_navigation_main'
+                        onMouseEnter={() => (
+                            toggleHover(index),
+                            kek(index)
+                        )}
+                        onMouseLeave={() => (
+                            toggleDisHover(),
+                            diskek()
+                        )}
+                    >
+                        {iconNav[index]}
+                        <div className="sub_navigation_content">
+                            <p className="sub_navigation_p">{titleP[index]}</p>
+                            <p className="sub_navigation_bold">{titleB[index]}</p>
+                        </div>
+                        <div className={styleNavigationBorder(index)}></div>
+                        <div className={stylekek(index)}></div>
+                        <div className={styleNavigation(index)}></div>
                     </div>
-                    <div className={styleNavigationBorder(index)}></div>
-                    <div className={stylekek(index)}></div>
-                    <div className={styleNavigation(index)}></div>
-                </div>
+                </a>
             ))}
         </div>
     )

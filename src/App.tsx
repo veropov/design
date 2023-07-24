@@ -8,6 +8,9 @@ import SkillaPage from "./skilla/SkillaPage";
 import { SmartUxArea } from "./components/Smart drive/SmartPage";
 import { UJMHome } from "./components/Smart drive/UJM/UJM-Home";
 import { UJMReg } from "./components/Smart drive/UJM/UJM-Reg";
+import { UJMProgress } from "./components/Smart drive/UJM/UJM-Progress";
+import { UJMHisory } from "./components/Smart drive/UJM/UJM-History";
+import { UserFlowHome } from "./components/Smart drive/User Flow/UserFlow";
 
 export default function App() {
 
@@ -25,6 +28,10 @@ export default function App() {
 
                 <Route path="/smart-drive/ujm" element={UJMHome()}/>
                 <Route path="/smart-drive/ujm/reg" element={UJMReg()}/>
+                <Route path="/smart-drive/ujm/progress" element={UJMProgress()}/>
+                <Route path="/smart-drive/ujm/history" element={UJMHisory()}/>
+
+                <Route path="/smart-drive/userflow" element={UserFlowHome()}/>
             </Routes>
         </div>
     )

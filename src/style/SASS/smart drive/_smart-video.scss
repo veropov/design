@@ -21,3 +21,33 @@
     align-self: stretch;
     width: 1200px;
 }
+
+.Smart-userflow {
+    border-radius: 16px;
+    overflow: hidden;
+    width: 580px; 
+    height: 480px;
+    position: relative;
+    transform: translate(0px, 0px);
+    border: 1.5px solid rgb(195, 197, 209);
+    .Smart-userflow-video {
+        width: 980px; 
+        position: relative;
+        transform: translate(-200px, -70px);
+    }
+}
+
+.Smart-userflow-main {
+    border-radius: 16px;
+    overflow: hidden;
+    width: 1200px;
+    height: 675px;
+    position: relative;
+    transform: translate(0px, 0px);
+    .Smart-userflow-main-video {
+        width: 1210px !important;
+        height: 685px !important;
+        position: relative;
+        transform: translate(-5px, -5px);
+    }
+}

@@ -34,3 +34,38 @@ export class ClassArea {
         )
     }
 }
+
+export class ClassMainArea {
+    title: String;
+    subTitle: String;
+    dateStart: String;
+    image!: String;
+
+    constructor(title: String, subTitle: String, dateStart: String, image: String) {
+        this.title = title;
+        this.subTitle = subTitle;
+        this.dateStart = dateStart;
+        this.image = image;
+    }
+
+    height = {
+        height: "30px"
+    }
+
+    JobArea() {
+        return (
+            <div className="container_person-job">
+                <div className="job">
+                    <div className="job_img">
+                        <img src={`${this.image}`} style={this.height} />
+                        <p className="job_type">{this.title}</p>
+                    </div>
+                    <div className="job_p">
+                        <p className="jop_p_bold">{this.subTitle}</p>
+                        <p className="jop_p_light">{this.dateStart}</p>
+                    </div>
+                </div>
+            </div>
+        )
+    }
+}

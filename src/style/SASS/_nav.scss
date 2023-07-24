@@ -211,7 +211,7 @@
     width: 90px;
     height: 70px;
     border-radius: 16px;
-    background: white;
+    background: $back1;
     clip-path: circle(100% at 50% 50%);
     transition: clip-path .3s ease-in;
 }
@@ -223,7 +223,7 @@
     width: 90px;
     height: 70px;
     border-radius: 16px;
-    background: white;
+    background: $back1;
     clip-path: circle(0% at 50% 50%);
     transition: clip-path .3s ease-in;
 }

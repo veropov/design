@@ -9,6 +9,7 @@ import smartHistory from '../../card/img/smart-history.png';
 import smartHelp from '../../card/img/smart-help.png';
 import smartNotif from '../../card/img/smart-notif.png';
 import smartVideo from '../../video/reg2.mp4';
+import {MainArea} from '../../area/job area/main-area';
 
 import { Player } from "@lottiefiles/react-lottie-player";
 import trans from '../../area/project area/trans_test.json';
@@ -23,7 +24,7 @@ export const UJMHome = () => {
 
     const [proj, setProj] = useState({
         active: null,
-        objects: [{id: 1}, {id: 2}, {id: 3}, {id: 4}, {id: 5}, {id: 6}]
+        objects: [{id: 1}, {id: 2}, {id: 3}]
     })
 
     function toggleHover(index) {
@@ -42,11 +43,11 @@ export const UJMHome = () => {
 
     const banner = new StateBanner(
         'Smart drive',
-        'Приложение, позволяющее cократить ',
-        'расходы на оформление ОСАГО',
+        'Карта пути пользователя',
+        'внутри продукта',
         ujmImg,
         smartHome,
-        'smartImg'
+        'smartImgUJM'
     )
 
     function LottieProj(index) {
@@ -67,27 +68,18 @@ export const UJMHome = () => {
         'Регистрация',
         'Прогресс вождения',
         'История вождения',
-        'Поддержка',
-        'Уведомления',
-        'Профиль',
     ]
 
     const subTitle = [
         'Оформление договора BRX',
-        'Оформление договора BRX',
-        'Оформление договора BRX',
-        'Оформление договора BRX',
-        'Оформление договора BRX',
-        'Оформление договора BRX',
+        'График, критерии вождения',
+        'Список поездок',
     ]
 
     const img = [
         smartReg,
         smartProg,
         smartHistory,
-        smartHelp,
-        smartNotif,
-        smartReg,
     ]
 
     const classN = [
@@ -101,11 +93,8 @@ export const UJMHome = () => {
 
     const hrefUJM = [
         '/smart-drive/ujm/reg',
-        '/smart-drive/ujm/reg',
-        '/smart-drive/ujm/reg',
-        '/smart-drive/ujm/reg',
-        '/smart-drive/ujm/reg',
-        '/smart-drive/ujm/reg',
+        '/smart-drive/ujm/progress',
+        '/smart-drive/ujm/history',
     ]
 
 
@@ -137,22 +126,24 @@ export const UJMHome = () => {
                     ))}
                     </div>
                 </div>
-                <TextAreaVert2
-                        name={'Описание'} 
-                        title={'Метод'} 
-                        subTitle={'Карта пользователя Smart drive была унаследована из FigJam и представляет собой анализ основного пути пользователя на всех точках взаимодействия. Я сделал большой акцент в сторону эмоций при взаимодействии с интерфейсом, так как функционал приложения повторяет старую версию без обновленного UI.'} 
-                        title2={'Опыт'} 
-                        subTitle2={'В моем тестировании участвовало 2 человека из целевой аудитории, поэтому я объединил их в одну карту. Так как в центре UJM находится опыт пользователя, все тесты я проводил на прототипах, созданных на фреймворке flutter. '} 
-                        video={smartVideo}
-                        figarea={true}
-                        linkFigma={'https://www.figma.com/file/KqSP2KCkcgf5dmwGOheM7M/Smart-drive?type=design&node-id=293-564&mode=design'}
-                        linkFigjam={'https://www.figma.com/file/HXQxQIc5bqHH9rU51EsryI/Smart-drive-UJM?type=whiteboard&node-id=0%3A1&t=cZEzRnD6GO18kd3E-1'}
-                    />
+                <MainArea 
+                    name={'Описание'} 
+                    title={'Метод'} 
+                    subTitle={'Карта пользователя Smart drive была унаследована из FigJam и представляет собой анализ основного пути пользователя на всех точках взаимодействия. Я сделал большой акцент в сторону эмоций при взаимодействии с интерфейсом, так как функционал приложения повторяет старую версию без обновленного UI.'} 
+                    title2={'Опыт'} 
+                    subTitle2={'В моем тестировании участвовало 2 человека из целевой аудитории, поэтому я объединил их в одну карту. Так как в центре UJM находится опыт пользователя, все тесты я проводил на прототипах, созданных на фреймворке flutter.'} 
+                    video={smartVideo}
+                    figarea={true}
+                    linkFigma={'https://www.figma.com/file/KqSP2KCkcgf5dmwGOheM7M/Smart-drive?type=design&node-id=293-564&mode=design'}
+                    linkFigjam={'https://www.figma.com/file/HXQxQIc5bqHH9rU51EsryI/Smart-drive-UJM?type=whiteboard&node-id=0%3A1&t=cZEzRnD6GO18kd3E-1'}
+                />
                 <BottomNavigation 
-                    subTitleP={'Перейти к '} 
-                    subTitleB={'User Flow'} 
+                    subTitleP={'Вернуться в меню'} 
+                    subTitleB={'Smart drive'} 
                     subTitleP2={'Перейти к '} 
-                    subTitleB2={'User Story'}
+                    subTitleB2={'User Flow'}
+                    enter={'/smart-drive'}
+                    back={'/smart-drive/userflow'}
                 />
             </div>
         </div>

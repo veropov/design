@@ -21,7 +21,7 @@ export const SmartUxArea = () => {
 
     const hrefSmart = [
         '/smart-drive/ujm',
-        '/smart-drive/ujm',
+        '/smart-drive/userflow',
         '/smart-drive/ujm'
     ]
 

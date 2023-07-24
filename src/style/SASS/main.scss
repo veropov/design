@@ -54,13 +54,17 @@ $typo_color: #333333;
 
 @import './_index.scss';
 @import './_header.scss';
-@import './_job-area.scss';
-@import './_info-area.scss';
-@import './_proj-area.scss';
+@import './area/job-area';
+@import './area/info-area';
+@import './area/proj-area';
+@import './area/text-area';
+@import './area/emotion-area';
+@import './area/area-main';
+
 @import './_banner.scss';
 @import './_project.scss';
 @import './_banner-ux.scss';
-@import './text-area';
+
 @import './nav';
 
 @import './yandex/_index_yand.scss';
@@ -81,3 +85,4 @@ $typo_color: #333333;
 
 @import './smart drive/ux-area';
 @import './smart drive/ui-area';
+@import './smart drive/user-flow';

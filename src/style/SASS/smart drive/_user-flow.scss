@@ -1,0 +1,26 @@
+.user-flow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    .user-flow-text {
+        display: flex;
+        width: 1200px;
+        padding: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+        border-radius: 16px;
+        background: #FFF;
+        .user-flow-p {
+            font-family: 'Jost';
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+        }
+    }
+    .user-flow-img {
+        width: 1200px;
+    }
+}
