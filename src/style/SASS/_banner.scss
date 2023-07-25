@@ -126,6 +126,11 @@
             position: relative;
             transform: translate(50px, 15px);
         }
+        .UIImg {
+            z-index: 3;
+            position: relative;
+            transform: translate(120px, 15px);
+        }
     }
 }
 

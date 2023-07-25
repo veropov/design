@@ -112,3 +112,18 @@
         transform: translate(-150px, -0px);
         z-index: 1;
     }
+
+    .ui-container-img {
+        width: 1200px;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .ui-img {
+            width: 1200px;
+        }
+        .ui-img-help {
+            width: 1800px;
+        }
+    }

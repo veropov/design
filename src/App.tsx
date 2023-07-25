@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./lib/HomePage";
-import UxPage from "./lib/UxPage"
+import {UxPage} from "./lib/UxPage"
 import ItPage from "./lib/ItPage";
 import ProjectPage from "./lib/ProjectPage";
 import HomePageYand from "./yandex/HomeYand";
@@ -11,6 +11,7 @@ import { UJMReg } from "./components/Smart drive/UJM/UJM-Reg";
 import { UJMProgress } from "./components/Smart drive/UJM/UJM-Progress";
 import { UJMHisory } from "./components/Smart drive/UJM/UJM-History";
 import { UserFlowHome } from "./components/Smart drive/User Flow/UserFlow";
+import { UIHome } from "./components/Smart drive/UI/SmartUiHome";
 
 export default function App() {
 
@@ -30,8 +31,8 @@ export default function App() {
                 <Route path="/smart-drive/ujm/reg" element={UJMReg()}/>
                 <Route path="/smart-drive/ujm/progress" element={UJMProgress()}/>
                 <Route path="/smart-drive/ujm/history" element={UJMHisory()}/>
-
                 <Route path="/smart-drive/userflow" element={UserFlowHome()}/>
+                <Route path="/smart-drive/ui" element={UIHome()}/>
             </Routes>
         </div>
     )

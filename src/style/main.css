@@ -977,6 +977,11 @@
   position: relative;
   transform: translate(50px, 15px);
 }
+.container_state_banner .sub_container_state_banner .UIImg {
+  z-index: 3;
+  position: relative;
+  transform: translate(120px, 15px);
+}
 
 @media only screen and (max-width: 420px) {
   .container_banner {
@@ -4144,6 +4149,21 @@
   width: 800px;
   transform: translate(-150px, 0px);
   z-index: 1;
+}
+
+.ui-container-img {
+  width: 1200px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ui-container-img .ui-img {
+  width: 1200px;
+}
+.ui-container-img .ui-img-help {
+  width: 1800px;
 }
 
 .user-flow-container {

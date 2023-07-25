@@ -134,17 +134,19 @@ export const SmartUxArea = () => {
                         <div className="sub_cont">
                         <p className='title_cont_smart'>Интерфейс</p>
                             <div className="Smart-ui-container">
+                            <NavLink to={'/smart-drive/ui'} style={{textDecoration: 'none'}}>
                                 <div className="Smart-ui-area-main"
                                         onMouseEnter={() => setProjUI(true)}
                                         onMouseLeave={() => setProjUI(false)}
-                                    >
-                                    <SmartUxAreaUI
-                                        title='User Interface (UI)'
-                                        bottomText='Правила оформления сайта: сочетания цветов, шрифты, отступы, иконки и кнопки'
-                                        image={driveUI}
-                                    />
+                                >
+                                        <SmartUxAreaUI
+                                            title='User Interface (UI)'
+                                            bottomText='Правила оформления сайта: сочетания цветов, шрифты, отступы, иконки и кнопки'
+                                            image={driveUI}
+                                        />
                                     {LottieUI()}
                                 </div>
+                                </NavLink>
                             </div>
                         </div>
                     </div>

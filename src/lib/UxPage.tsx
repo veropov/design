@@ -8,9 +8,10 @@ import nps from '../style/assets/img/nps.png';
 import Smart from '../style/assets/img/Smart.jpg';
 import Baggage from '../style/assets/img/Baggage.jpg';
 import Fitnest from '../style/assets/img/FitnestX.jpg';
+import { ProjArea2 } from '../components/area/project area/projects-area';
 
 
-export default function UxPage() {
+export const UxPage = () => {
     return (
         <div className="container">
             <Header />
@@ -25,28 +26,17 @@ export default function UxPage() {
                     </div>
                     <div className="sub_cont">
                         <p className='title_cont'>Проекты</p>
+                        <ProjArea2 />
+                    </div>
+                    <div className="sub_cont">
+                        <p className='title_cont'>Точечные задачи</p>
                         <div className="project_container">
-                            { MainProject('Smart drive', 'Приложение, которое позволяет сократить расходы на оформление ОСАГО', 'pet', false, true, true, true, true, true, 'https://www.figma.com/file/KqSP2KCkcgf5dmwGOheM7M/Smart-drive?type=design&node-id=293%3A564&t=jN8krBkmCu9Fss5J-1', Smart, false) }
-                            { MainProject('FUN&SUN project', 'Оформление услуг в аэропорту, форма обратной связи', 'comm', true, true, true, false, true, false, 'https://www.figma.com/file/SQvge574qM6tTgjtcWM1GJ/FUN%26SUN-projects?type=design&node-id=0%3A1&t=1YttjT2b5n2LNMkz-1', Baggage, false) }
-                            { MainProject('Дилерский сайт Lada', 'Создание продающего лендинга с карточками товаров', 'pet', false, true, false, false, true, false, 'https://www.figma.com/file/k4IDaZbkVdatVAKUXZ4jEc/Lada?type=design&node-id=0%3A1&t=4Tl82BB3qCw5vNn6-1', Fitnest, false) }
+                            { MainProject('FUN SUN UserFlow', 'Построение user flow анкета-тур (переход через внешние источники)', 'comm', true, true, true, true, false, true, 'https://www.figma.com/file/QtkWSTG7IlYYi2RLYkswZm/Untitled?type=design&node-id=0%3A1&mode=design&t=DVconLdP3coBdlOX-1', Smart, false) }
+                            { MainProject('FUN&SUN Бронирование', 'Оформление услуг в аэропорту, форма обратной связи', 'comm', true, true, true, false, true, false, 'https://www.figma.com/file/SQvge574qM6tTgjtcWM1GJ/FUN%26SUN-projects?type=design&node-id=0%3A1&t=1YttjT2b5n2LNMkz-1', Baggage, false) }
+                            { MainProject('Дилерский сайт Lada', 'Создание продающего лендинга с карточками товаров', 'pet', false, false, true, false, true, false, 'https://www.figma.com/file/k4IDaZbkVdatVAKUXZ4jEc/Lada?type=design&node-id=0%3A1&t=4Tl82BB3qCw5vNn6-1', Fitnest, false) }
                         </div>
                     </div>
-                    {/* <div className="sub_cont">
-                        <p className='title_cont'>Подробности работы</p>
-                        <div className="about_project">
-                            <div className="about_project_m">
-                                <div className='cont_project_m'>
-                                    <p className='bold_p'>BAT IT</p>
-                                    <p className='info_proj_m'>Приложением Smart drive занималась небольшая команда, я работал с результатами ux исследований, сам не принимал в них участия (это делал аналитик). На основе исследований я создавал user flow, прототипы, добавлял ui библиотеки с изменениями под брендбук заказчика. Какое-то время в команде была нехватка флаттер программистов, и я самостоятельно занимался версткой ui компонентов и добавлял небольшой функционал. </p>
-                                </div>
-                                <div className='cont_project_m'>
-                                    <p className='bold_p'>FUN&SUN</p>
-                                    <p className='info_proj_m'>В компании моей основной обязанностью была работа с анимацией, однако иногда я подключался к веб-дизайну и дизайну интерфейсов. Ux исследования отдавали на аутсорс, я работал напрямую с заказчиками. Это были небольшие задачи, либо поддержка крупных проектов от партнеров. Я работал с готовыми ui решениями дизайн системы FUN&SUN, самостоятельно разработкой не занимался. </p>
-                                </div>
-                                <img src={nps} className='nps'/>
-                            </div>
-                        </div>
-                    </div> */}
+                    
                 </div>
             </div>
         </div>

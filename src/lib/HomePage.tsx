@@ -24,7 +24,7 @@ import Work from '../style/assets/icons/Work.svg';
 import Profile from '../style/assets/icons/Profile.svg';
 import Location from '../style/assets/icons/Location.svg';
 import Message from '../style/assets/icons/Message.svg';
-import  PrArea  from '../components/area/project area/projects-area';
+import {ProjArea}  from '../components/area/project area/projects-area';
 import MainProject from '../lib/projects';
 import { title } from 'process';
 
@@ -180,8 +180,8 @@ const banner = new Banner(
                 </div>
                 </div>
                 <div className="sub_cont">
-                    <p className='title_cont'>Анимация</p>
-                    <PrArea />
+                    <p className='title_cont'>Последние работы</p>
+                    <ProjArea />
                 </div>
             </div>
         </div>
