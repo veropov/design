@@ -63,7 +63,7 @@
   width: 1200px;
   flex-wrap: wrap;
   display: flex;
-  gap: 20px;
+  gap: 25px;
   justify-content: center;
 }
 .main .container_main-1 .sub_cont .title_cont {
@@ -112,7 +112,7 @@
 @media only screen and (max-width: 420px) {
   .main {
     margin-top: 110px;
-    width: 420px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -145,7 +145,7 @@
     width: 340px;
     flex-wrap: wrap;
     display: flex;
-    gap: 20px;
+    gap: 25px;
     justify-content: center;
   }
   .main .container_main-1 .sub_cont .title_cont {
@@ -191,7 +191,7 @@
   }
   .main .container_main-1 .sub_cont .about_me .info_main .container_info-1 .info_p {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 130%;
   }
 }
@@ -529,6 +529,7 @@
     font-size: 14px;
   }
   .job .job_p {
+    width: 130px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -688,7 +689,7 @@
     font-family: "Jost";
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 130%;
   }
   .proj_area .proj_cont .subTitle_proj {
@@ -740,6 +741,48 @@
   gap: 25px;
 }
 
+@media only screen and (max-width: 420px) {
+  .text-area-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    flex: 1 0 0;
+  }
+  .text-area-main .text-area-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 16px;
+    background: #FFF;
+    gap: 25px;
+  }
+  .text-area-main .text-area-content .text-area-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+  }
+  .container_text_main {
+    display: flex;
+    width: 340px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    flex: 1 0 0;
+  }
+  .emotion-area-content {
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 16px;
+    background: #FFF;
+    gap: 25px;
+  }
+}
 .emotion_container {
   display: flex;
   flex-direction: column;
@@ -844,6 +887,61 @@
   background: #FFF;
 }
 
+@media only screen and (max-width: 420px) {
+  .area_main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    align-items: flex-start;
+    gap: 25px;
+  }
+  .area_main .area_sub_main {
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    flex: 1 0 0;
+    border-radius: 16px;
+    background: #FFF;
+  }
+  .area_main .area_sub_main .Smart-ujm-area-video-main {
+    border-radius: 16px;
+    overflow: hidden;
+    width: 275px;
+    height: 360px;
+    position: relative;
+    transform: translate(0px, 0px);
+    border: 1.5px solid rgb(195, 197, 209);
+  }
+  .area_main .area_sub_main .Smart-ujm-area-video-main .Smart-ujm-area-video {
+    width: 360px !important;
+    height: 360px !important;
+    position: relative;
+    transform: translate(-44px, 0px);
+  }
+  .area_main .area_sub_main .container_area-job {
+    display: flex;
+    width: 172px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 15px;
+    align-self: stretch;
+  }
+  .area_main .info_main-area {
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 0;
+    border-radius: 16px;
+    background: #FFF;
+  }
+}
 .container_banner {
   background: radial-gradient(74.08% 1695.93% at 12.04% 80.92%, rgba(175, 193, 255, 0.2) 0%, rgba(112, 0, 255, 0.2) 100%), linear-gradient(86.99deg, #BAC5FF 0.2%, #EFCDFF 99.48%);
   border-radius: 16px;
@@ -1017,7 +1115,7 @@
   }
   .container_banner .frame_banner .p_banner {
     font-weight: 500;
-    font-size: 24px;
+    font-size: 28px;
     line-height: 110%;
     text-align: center;
   }
@@ -1039,6 +1137,87 @@
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
+  }
+  .container_state_banner {
+    background: radial-gradient(74.08% 1695.93% at 12.04% 80.92%, rgba(175, 193, 255, 0.2) 0%, rgba(112, 0, 255, 0.2) 100%), linear-gradient(86.99deg, #BAC5FF 0.2%, #EFCDFF 99.48%);
+    border-radius: 16px;
+    width: 100%;
+    max-width: 340px;
+    height: 260px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .container_state_banner .frame_back {
+    max-width: 800px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: relative;
+    z-index: 0;
+    transform: translate(-14px, -400px);
+  }
+  .container_state_banner .sub_container_state_banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+    width: 340px;
+    height: 400px;
+  }
+  .container_state_banner .sub_container_state_banner .frame_state_banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    position: relative;
+    transform: translate(0px, -70px);
+  }
+  .container_state_banner .sub_container_state_banner .frame_state_banner .p_state_banner {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 110%;
+    text-align: center;
+  }
+  .container_state_banner .sub_container_state_banner .frame_state_banner .p_state_light_banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Jost";
+    font-size: 18px;
+    width: 320px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+  }
+  .container_state_banner .sub_container_state_banner .smartImg {
+    z-index: 3;
+    position: relative;
+    width: 795px;
+    height: 328px;
+    transform: translate(0px, 90px);
+    display: none;
+  }
+  .container_state_banner .sub_container_state_banner .smartImgUJM {
+    z-index: 3;
+    position: relative;
+    width: 600px;
+    height: 520px;
+    transform: translate(-75px, 30px);
+    display: none;
+  }
+  .container_state_banner .sub_container_state_banner .UserFlowImg {
+    z-index: 3;
+    position: relative;
+    transform: translate(50px, 15px);
+    display: none;
+  }
+  .container_state_banner .sub_container_state_banner .UIImg {
+    z-index: 3;
+    position: relative;
+    transform: translate(120px, 15px);
+    display: none;
   }
 }
 .project_container {
@@ -1395,7 +1574,7 @@
   .project_container .cont_head_project .head_project .title_project p {
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 130%;
   }
   .project_container .cont_head_project .head_project .title_project .type_project {
@@ -2112,6 +2291,247 @@
   transition: clip-path 0.3s ease-in, -webkit-clip-path 0.3s ease-in;
 }
 
+@media only screen and (max-width: 420px) {
+  .sub_cont_navigation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    align-self: stretch;
+  }
+  .sub_navigation_main {
+    display: flex;
+    height: 120px;
+    width: 340px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 16px;
+    cursor: pointer;
+  }
+  .sub_navigation_main .sub_navigation_head {
+    position: relative;
+    z-index: 10;
+    margin-top: 30px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .sub_navigation_main .sub_navigation_head .sub_navigation_head_text {
+    font-family: "Jost";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .sub_navigation_main .sub_navigation_content {
+    position: relative;
+    z-index: 10;
+    margin-left: 30px;
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  .sub_navigation_main .sub_navigation_content .sub_navigation_p {
+    font-family: "Jost";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .sub_navigation_main .sub_navigation_content .sub_navigation_bold {
+    font-family: "Jost";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .sub_navigation_hiddden {
+    position: absolute;
+    z-index: 0;
+    width: 340px;
+    border-radius: 16px;
+    height: 120px;
+    background: linear-gradient(315deg, rgba(97, 0, 255, 0.35) 0%, #B0D9FF 100%);
+    -webkit-clip-path: circle(100% at 50% 50%);
+            clip-path: circle(100% at 50% 50%);
+    transition: -webkit-clip-path 0.3s ease-in;
+    transition: clip-path 0.3s ease-in;
+    transition: clip-path 0.3s ease-in, -webkit-clip-path 0.3s ease-in;
+  }
+  .sub_navigation_hiddden_none {
+    position: absolute;
+    z-index: 0;
+    transform: translate(0px, 0px);
+    border-radius: 16px;
+    width: 340px;
+    height: 120px;
+    background: transparent;
+    background: linear-gradient(315deg, rgba(97, 0, 255, 0.35) 0%, #B0D9FF 100%);
+    -webkit-clip-path: circle(0% at 50% 50%);
+            clip-path: circle(0% at 50% 50%);
+    transition: -webkit-clip-path 0.3s ease-in;
+    transition: clip-path 0.3s ease-in;
+    transition: clip-path 0.3s ease-in, -webkit-clip-path 0.3s ease-in;
+  }
+  .sub_navigation_border {
+    position: absolute;
+    z-index: 10;
+    width: 340px;
+    border-radius: 16px;
+    height: 120px;
+    border: 0.7px solid #333;
+    -webkit-clip-path: circle(0% at 0%);
+            clip-path: circle(0% at 0%);
+    transition: -webkit-clip-path 0.6s ease-in-out;
+    transition: clip-path 0.6s ease-in-out;
+    transition: clip-path 0.6s ease-in-out, -webkit-clip-path 0.6s ease-in-out;
+  }
+  .sub_navigation_border_none {
+    position: absolute;
+    z-index: 10;
+    border-radius: 16px;
+    width: 340px;
+    height: 120px;
+    border: 0.7px solid #333;
+    -webkit-clip-path: circle(150% at 0%);
+            clip-path: circle(150% at 0%);
+    transition: -webkit-clip-path 0.6s ease-in-out;
+    transition: clip-path 0.6s ease-in-out;
+    transition: clip-path 0.6s ease-in-out, -webkit-clip-path 0.6s ease-in-out;
+  }
+  .sub_kek {
+    position: absolute;
+    z-index: 1;
+    width: 340px;
+    border-radius: 16px;
+    height: 120px;
+    background: white;
+    -webkit-clip-path: circle(100% at 50% 50%);
+            clip-path: circle(100% at 50% 50%);
+    transition: -webkit-clip-path 0.4s ease-in;
+    transition: clip-path 0.4s ease-in;
+    transition: clip-path 0.4s ease-in, -webkit-clip-path 0.4s ease-in;
+  }
+  .sub_kek_none {
+    position: absolute;
+    z-index: 1;
+    transform: translate(0px, 0px);
+    border-radius: 16px;
+    width: 340px;
+    height: 120px;
+    background: white;
+    -webkit-clip-path: circle(0% at 50% 50%);
+            clip-path: circle(0% at 50% 50%);
+    transition: -webkit-clip-path 0.4s ease-in;
+    transition: clip-path 0.4s ease-in;
+    transition: clip-path 0.4s ease-in, -webkit-clip-path 0.4s ease-in;
+  }
+  .text_f-f {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+  }
+  .text_f-f .text_area_figma {
+    display: flex;
+    width: 90px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+  .text_f-f .text_area_figma .figma_figjam {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+  }
+  .sub_figma_hiddden {
+    position: absolute;
+    z-index: 0;
+    width: 90px;
+    height: 70px;
+    border-radius: 16px;
+    background: linear-gradient(315deg, rgba(97, 0, 255, 0.35) 0%, #B0D9FF 100%);
+    -webkit-clip-path: circle(100% at 50% 50%);
+            clip-path: circle(100% at 50% 50%);
+    transition: -webkit-clip-path 0.2s ease-in;
+    transition: clip-path 0.2s ease-in;
+    transition: clip-path 0.2s ease-in, -webkit-clip-path 0.2s ease-in;
+  }
+  .sub_figma_hiddden_none {
+    position: absolute;
+    z-index: 0;
+    transform: translate(0px, 0px);
+    width: 90px;
+    height: 70px;
+    border-radius: 16px;
+    background: transparent;
+    background: linear-gradient(315deg, rgba(97, 0, 255, 0.35) 0%, #B0D9FF 100%);
+    -webkit-clip-path: circle(0% at 50% 50%);
+            clip-path: circle(0% at 50% 50%);
+    transition: -webkit-clip-path 0.2s ease-in;
+    transition: clip-path 0.2s ease-in;
+    transition: clip-path 0.2s ease-in, -webkit-clip-path 0.2s ease-in;
+  }
+  .sub_figma_border {
+    position: absolute;
+    z-index: 10;
+    width: 90px;
+    height: 70px;
+    border-radius: 16px;
+    border: 0.7px solid #333;
+    -webkit-clip-path: circle(0% at 0%);
+            clip-path: circle(0% at 0%);
+    transition: -webkit-clip-path 0.4s ease-in-out;
+    transition: clip-path 0.4s ease-in-out;
+    transition: clip-path 0.4s ease-in-out, -webkit-clip-path 0.4s ease-in-out;
+  }
+  .sub_figma_border_none {
+    position: absolute;
+    z-index: 10;
+    width: 90px;
+    height: 70px;
+    border-radius: 16px;
+    border: 0.7px solid #333;
+    -webkit-clip-path: circle(150% at 0%);
+            clip-path: circle(150% at 0%);
+    transition: -webkit-clip-path 0.4s ease-in-out;
+    transition: clip-path 0.4s ease-in-out;
+    transition: clip-path 0.4s ease-in-out, -webkit-clip-path 0.4s ease-in-out;
+  }
+  .sub_figma_kek {
+    position: absolute;
+    z-index: 1;
+    width: 90px;
+    height: 70px;
+    border-radius: 16px;
+    background: #F8F8FE;
+    -webkit-clip-path: circle(100% at 50% 50%);
+            clip-path: circle(100% at 50% 50%);
+    transition: -webkit-clip-path 0.3s ease-in;
+    transition: clip-path 0.3s ease-in;
+    transition: clip-path 0.3s ease-in, -webkit-clip-path 0.3s ease-in;
+  }
+  .sub_figma_kek_none {
+    position: absolute;
+    z-index: 1;
+    transform: translate(0px, 0px);
+    width: 90px;
+    height: 70px;
+    border-radius: 16px;
+    background: #F8F8FE;
+    -webkit-clip-path: circle(0% at 50% 50%);
+            clip-path: circle(0% at 50% 50%);
+    transition: -webkit-clip-path 0.3s ease-in;
+    transition: clip-path 0.3s ease-in;
+    transition: clip-path 0.3s ease-in, -webkit-clip-path 0.3s ease-in;
+  }
+}
 .main_yand {
   display: flex;
   align-items: center;
@@ -3487,6 +3907,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
   }
   .search_main .search_container {
     display: flex;
@@ -3502,8 +3923,6 @@
     height: 420px;
     overflow: hidden;
     border-radius: 0 0 16px 16px;
-    display: flex;
-    flex-direction: column;
   }
   .search_main .fun_sun_anim_search .search_filter {
     display: flex;
@@ -3630,7 +4049,10 @@
     color: black;
   }
   .search_main .fun_sun_anim_search .Search_transition {
-    display: none;
+    z-index: 10;
+    position: relative;
+    width: 3380px;
+    transform: translate(-500px, -1250px);
   }
   .lottie_search {
     display: flex;
@@ -3822,6 +4244,110 @@
   z-index: 0;
 }
 
+@media only screen and (max-width: 420px) {
+  .smart-card-hidden {
+    width: 340px;
+    height: 80px;
+    background: #FFF;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.15s linear;
+  }
+  .smart-card-hidden:hover {
+    transform: translateY(4px);
+  }
+  .smart-card-hidden .card-ui-main {
+    display: flex;
+    width: 340px;
+    height: 80px;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: transparent;
+    overflow: hidden;
+  }
+  .smart-card-hidden .card-ui-main .card-content {
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    gap: 16px;
+    flex: 1 0 0;
+    align-self: stretch;
+    position: relative;
+    z-index: 10;
+  }
+  .smart-card-hidden .card-ui-main .card-content .card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    flex: 1 0 0;
+    background: white;
+    padding: 6px;
+    width: 200px;
+    border-radius: 8px;
+  }
+  .smart-card-hidden .card-ui-main .card-content .card-text .card-text-title {
+    font-family: "Jost";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.15px;
+  }
+  .smart-card-hidden .card-ui-main .card-content .card-text .card-text-subTitle {
+    text-align: center;
+    font-family: "Jost";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+  }
+  .smart-card-hidden .card-ui-main .card-media {
+    display: flex;
+    width: 180px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-shrink: 0;
+    align-self: stretch;
+    background: linear-gradient(315deg, rgb(183, 138, 255) 0%, #B0D9FF 100%);
+    position: relative;
+    z-index: 10;
+  }
+  .smart-reg {
+    width: 56px;
+    position: relative;
+    transform: translate(30px, 0px);
+  }
+  .smart-progress {
+    width: 150px;
+    position: relative;
+    transform: translate(1px, 2px);
+  }
+  .smart-second {
+    width: 62px;
+    position: relative;
+    transform: translate(30px, 0px);
+  }
+  .smart-card-main {
+    display: flex;
+    width: 340px;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+  .lottie_card_smart {
+    position: relative;
+    width: 340px;
+    transform: translate(-100px, -120px);
+    z-index: 0;
+  }
+}
 .Smart-ujm-video-main {
   border-radius: 16px;
   overflow: hidden;
@@ -3876,6 +4402,59 @@
   transform: translate(-5px, -5px);
 }
 
+@media only screen and (max-width: 420px) {
+  .Smart-ujm-video-main {
+    border-radius: 16px;
+    overflow: hidden;
+    width: 340px;
+    height: 420px;
+    position: relative;
+    transform: translate(0px, 0px);
+    border: 1.5px solid rgb(195, 197, 209);
+  }
+  .Smart-ujm-video-main .Smart-ujm-video {
+    width: 420px !important;
+    height: 420px !important;
+    position: relative;
+    transform: translate(-41px, 0px);
+  }
+  .sub_cont_smart_video {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    align-self: stretch;
+    width: 340px;
+  }
+  .Smart-userflow {
+    border-radius: 16px;
+    overflow: hidden;
+    width: 275px;
+    height: 300px;
+    position: relative;
+    transform: translate(0px, 0px);
+    border: 1.5px solid rgb(195, 197, 209);
+  }
+  .Smart-userflow .Smart-userflow-video {
+    width: 500px;
+    position: relative;
+    transform: translate(-114px, -10px);
+  }
+  .Smart-userflow-main {
+    border-radius: 16px;
+    overflow: hidden;
+    width: 340px;
+    height: 190px;
+    position: relative;
+    transform: translate(0px, 0px);
+  }
+  .Smart-userflow-main .Smart-userflow-main-video {
+    width: 350px !important;
+    height: 200px !important;
+    position: relative;
+    transform: translate(-5px, -5px);
+  }
+}
 .Smart-ux-area {
   display: flex;
   height: 150px;
@@ -4036,6 +4615,181 @@
   line-height: 130%;
 }
 
+@media only screen and (max-width: 420px) {
+  .Smart-ux-area {
+    display: flex;
+    width: 340px;
+    padding: 0px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background: transparent;
+    height: auto;
+  }
+  .Smart-ux-area .Smart-ux-area-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    align-self: stretch;
+    height: auto;
+  }
+  .Smart-ux-area .Smart-ux-area-area .Smart-ux-leading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 16px;
+    position: relative;
+    z-index: 10;
+    background: #F8F8FE;
+    border-radius: 16px;
+    padding: 10px;
+  }
+  .Smart-ux-area .Smart-ux-area-area .Smart-ux-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+    position: relative;
+    z-index: 10;
+    background: white;
+    border-radius: 8px;
+    padding: 15px 0px;
+    gap: 15px;
+  }
+  .Smart-ux-area .Smart-ux-area-area .Smart-ux-content .Smart-ux-content-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .Smart-ux-area .Smart-ux-area-area .Smart-ux-content .Smart-ux-content-text .Smart-ux-content-text-title {
+    color: #333;
+    font-size: 16px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+  }
+  .Smart-ux-area .Smart-ux-area-area .Smart-ux-content .Smart-ux-content-text .Smart-ux-content-text-subtitle {
+    color: #333;
+    font-size: 14px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+  }
+  .Smart-ux-area .Smart-ux-area-area .Smart-ux-content .Smart-ux-content-bottom {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+  }
+  .Smart-ux-area .Smart-ux-area-area .Smart-ux-content .Smart-ux-content-bottom .Smart-ux-content-bottom-back {
+    display: flex;
+    width: 26px;
+    height: 26px;
+    justify-content: center;
+    align-items: center;
+    background: #F8F8FE;
+    border-radius: 99px;
+  }
+  .Smart-ux-area .Smart-ux-area-area .Smart-ux-content .Smart-ux-content-bottom .Smart-ux-content-bottom-text {
+    display: flex;
+    width: 180px;
+    flex-direction: column;
+    color: #333;
+    font-size: 12px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+  }
+  .Smart-ux-area .Smart-ux-area-area .Smart-ux-tralling {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    padding: 10px;
+    background: white;
+    position: relative;
+    border-radius: 8px;
+    z-index: 10;
+    display: none;
+  }
+  .Smart-ux-area .Smart-ux-area-area .Smart-ux-tralling .Smart-ux-tralling-back {
+    display: flex;
+    width: 26px;
+    height: 26px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 99px;
+    background: #F8F8FE;
+  }
+  .sub_cont_smart {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    align-self: stretch;
+    margin-bottom: 30px;
+    width: 340px;
+  }
+  .sub_cont_smart .Smart-ux-container {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+  }
+  .sub_cont_smart .Smart-ux-container .Smart-ux-area-main {
+    height: auto;
+    width: 340px;
+    display: flex;
+    position: relative;
+    border-radius: 16px;
+    background: white;
+    overflow: hidden;
+    cursor: pointer;
+    transition: linear 0.15s;
+  }
+  .sub_cont_smart .Smart-ux-container .Smart-ux-area-main:hover {
+    transform: translateX(6px);
+  }
+  .sub_cont_smart {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    align-self: stretch;
+    margin-bottom: 30px;
+    width: 340px;
+  }
+  .sub_cont_smart .Smart-ux-container {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+  }
+  .sub_cont_smart .Smart-ux-container .Smart-ux-area-main {
+    height: auto;
+    width: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 16px;
+    background: white;
+    overflow: hidden;
+    cursor: pointer;
+    transition: linear 0.15s;
+  }
+  .sub_cont_smart .Smart-ux-container .Smart-ux-area-main:hover {
+    transform: translateX(6px);
+  }
+}
 .Smart-ui-container {
   display: flex;
   border-radius: 16px;
@@ -4166,6 +4920,137 @@
   width: 1800px;
 }
 
+@media only screen and (max-width: 420px) {
+  .Smart-ui-container {
+    display: flex;
+    border-radius: 16px;
+    background: transparent;
+    cursor: pointer;
+    transition: linear 0.15s;
+  }
+  .Smart-ui-container:hover {
+    transform: translateX(-6px);
+  }
+  .Smart-ui-container .Smart-ui-area-main {
+    background: white;
+    border-radius: 16px;
+    width: 340px;
+    height: 350px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+  }
+  .Smart-ui-container .Smart-ui-area-main .Smart-ui-area {
+    display: flex;
+    padding: 20px;
+    width: 340px;
+    height: 350px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    flex: 1 0 0;
+    align-self: stretch;
+  }
+  .Smart-ui-container .Smart-ui-area-main .Smart-ui-area .Smart-ui-content {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background: white;
+    align-self: stretch;
+  }
+  .Smart-ui-container .Smart-ui-area-main .Smart-ui-area .Smart-ui-content .Smart-ui-content-text-title {
+    color: #333;
+    font-size: 18px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+  }
+  .Smart-ui-container .Smart-ui-area-main .Smart-ui-area .Smart-ui-content .Smart-ui-content-bottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    align-self: stretch;
+  }
+  .Smart-ui-container .Smart-ui-area-main .Smart-ui-area .Smart-ui-content .Smart-ui-content-bottom .Smart-ui-content-bottom-back {
+    display: flex;
+    width: 26px;
+    height: 26px;
+    justify-content: center;
+    align-items: center;
+    background: #F8F8FE;
+    border-radius: 99px;
+  }
+  .Smart-ui-container .Smart-ui-area-main .Smart-ui-area .Smart-ui-content .Smart-ui-content-bottom .Smart-ui-content-bottom-text {
+    width: 242px;
+    display: flex;
+    flex-direction: column;
+    color: #333;
+    font-size: 13px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+  }
+  .Smart-ui-container .Smart-ui-area-main .Smart-ui-area .Smart-ui-tralling {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 346px;
+    background: #F8F8FE;
+    position: relative;
+    border-radius: 16px;
+    z-index: 10;
+  }
+  .Smart-ui-container .Smart-ui-area-main .Smart-ui-area .Smart-ui-tralling .Smart-ui-tralling-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    height: 200px;
+    background: #F8F8FE;
+    overflow: hidden;
+    border-radius: 16px;
+  }
+  .Smart-ui-container .Smart-ui-area-main .Smart-ui-area .Smart-ui-tralling .Smart-ui-tralling-back img {
+    position: relative;
+    width: 250px;
+    transform: translate(0px, 0px);
+    border-radius: 16px;
+  }
+  .lottie_smart_ui {
+    position: absolute;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 800px;
+    transform: translate(-150px, 0px);
+    z-index: 1;
+  }
+  .ui-container-img {
+    width: 340px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ui-container-img .ui-img {
+    width: 340px;
+  }
+  .ui-container-img .ui-img-help {
+    width: 500px;
+  }
+}
 .user-flow-container {
   display: flex;
   flex-direction: column;
@@ -4191,4 +5076,33 @@
 }
 .user-flow-container .user-flow-img {
   width: 1200px;
+}
+
+@media only screen and (max-width: 420px) {
+  .user-flow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+  .user-flow-container .user-flow-text {
+    display: flex;
+    width: 340px;
+    padding: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    border-radius: 16px;
+    background: #FFF;
+  }
+  .user-flow-container .user-flow-text .user-flow-p {
+    font-family: "Jost";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+  }
+  .user-flow-container .user-flow-img {
+    width: 340px;
+  }
 }/*# sourceMappingURL=main.css.map */

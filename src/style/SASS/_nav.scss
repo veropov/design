@@ -227,3 +227,237 @@
     clip-path: circle(0% at 50% 50%);
     transition: clip-path .3s ease-in;
 }
+
+@media only screen and (max-width: 420px) {
+    .sub_cont_navigation {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+        align-self: stretch;
+    }
+    .sub_navigation_main {
+        display: flex;
+        height: 120px;
+        width: 340px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        border-radius: 16px;
+        cursor: pointer;
+        .sub_navigation_head {
+            position: relative;
+            z-index: 10;
+            margin-top: 30px;
+            margin-left: 30px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            .sub_navigation_head_text {
+                font-family: 'Jost';
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+        .sub_navigation_content {
+            position: relative;
+            z-index: 10;
+            margin-left: 30px;
+            display: flex;
+            align-items: flex-start;
+            gap: 5px;
+    
+            .sub_navigation_p {
+                font-family: 'Jost';
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+    
+            }
+            .sub_navigation_bold {
+                font-family: 'Jost';
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+    
+            }
+        }
+    
+    }
+    
+    .sub_navigation_hiddden {
+        position: absolute;
+        z-index: 0;
+        width: 340px;
+        border-radius: 16px;
+        height: 120px;
+        background: (linear-gradient(315deg, rgba(97, 0, 255, 0.35) 0%, #B0D9FF 100%));
+        clip-path: circle(100% at 50% 50%);
+        transition: clip-path .3s ease-in;
+    }
+    
+    .sub_navigation_hiddden_none {
+        position: absolute;
+        z-index: 0;
+        transform: translate(0px, 0px);
+        border-radius: 16px;
+        width: 340px;
+        height: 120px;
+        background: transparent;
+        background: (linear-gradient(315deg, rgba(97, 0, 255, 0.35) 0%, #B0D9FF 100%));
+        clip-path: circle(0% at 50% 50%);
+        transition: clip-path .3s ease-in;
+    }
+    
+    .sub_navigation_border {
+        position: absolute;
+        z-index: 10;
+        width: 340px;
+        border-radius: 16px;
+        height: 120px;
+        border: 0.7px solid #333;
+        clip-path: circle(0% at 0%);
+        transition: clip-path .6s ease-in-out;
+    }
+    
+    .sub_navigation_border_none {
+        position: absolute;
+        z-index: 10;
+        border-radius: 16px;
+        width: 340px;
+        height: 120px;
+        border: 0.7px solid #333;
+        clip-path: circle(150% at 0%);
+        transition: clip-path .6s ease-in-out;
+    }
+    
+    
+    .sub_kek {
+        position: absolute;
+        z-index: 1;
+        width: 340px;
+        border-radius: 16px;
+        height: 120px;
+        background: white;
+        clip-path: circle(100% at 50% 50%);
+        transition: clip-path .4s ease-in;
+    }
+    
+    .sub_kek_none {
+        position: absolute;
+        z-index: 1;
+        transform: translate(0px, 0px);
+        border-radius: 16px;
+        width: 340px;
+        height: 120px;
+        background: white;
+        clip-path: circle(0% at 50% 50%);
+        transition: clip-path .4s ease-in;
+    }
+    
+    
+    
+    
+    ///FIGMA AREA///
+    ///FIGMA AREA///
+    ///FIGMA AREA///
+    
+    .text_f-f {
+        display: flex;
+        align-items: flex-start;
+        gap: 25px;
+        .text_area_figma {
+            display: flex;
+            width: 90px;
+            height: 70px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            .figma_figjam {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                z-index: 10;
+            }
+        }
+    }
+    
+    
+    
+    .sub_figma_hiddden {
+        position: absolute;
+        z-index: 0;
+        width: 90px;
+        height: 70px;
+        border-radius: 16px;
+        background: (linear-gradient(315deg, rgba(97, 0, 255, 0.35) 0%, #B0D9FF 100%));
+        clip-path: circle(100% at 50% 50%);
+        transition: clip-path .2s ease-in;
+    }
+    
+    .sub_figma_hiddden_none {
+        position: absolute;
+        z-index: 0;
+        transform: translate(0px, 0px);
+        width: 90px;
+        height: 70px;
+        border-radius: 16px;
+        background: transparent;
+        background: (linear-gradient(315deg, rgba(97, 0, 255, 0.35) 0%, #B0D9FF 100%));
+        clip-path: circle(0% at 50% 50%);
+        transition: clip-path .2s ease-in;
+    }
+    
+    .sub_figma_border {
+        position: absolute;
+        z-index: 10;
+        width: 90px;
+        height: 70px;
+        border-radius: 16px;
+        border: 0.7px solid #333;
+        clip-path: circle(0% at 0%);
+        transition: clip-path .4s ease-in-out;
+    }
+    
+    .sub_figma_border_none {
+        position: absolute;
+        z-index: 10;
+        width: 90px;
+        height: 70px;
+        border-radius: 16px;
+        border: 0.7px solid #333;
+        clip-path: circle(150% at 0%);
+        transition: clip-path .4s ease-in-out;
+    }
+    
+    
+    .sub_figma_kek {
+        position: absolute;
+        z-index: 1;
+        width: 90px;
+        height: 70px;
+        border-radius: 16px;
+        background: $back1;
+        clip-path: circle(100% at 50% 50%);
+        transition: clip-path .3s ease-in;
+    }
+    
+    .sub_figma_kek_none {
+        position: absolute;
+        z-index: 1;
+        transform: translate(0px, 0px);
+        width: 90px;
+        height: 70px;
+        border-radius: 16px;
+        background: $back1;
+        clip-path: circle(0% at 50% 50%);
+        transition: clip-path .3s ease-in;
+    }
+}
